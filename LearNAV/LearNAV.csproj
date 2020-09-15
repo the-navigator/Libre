@@ -117,6 +117,12 @@
     <Compile Include="Advance_Search.Designer.cs">
       <DependentUpon>Advance_Search.cs</DependentUpon>
     </Compile>
+    <Compile Include="cmn_line.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cmn_line.Designer.cs">
+      <DependentUpon>cmn_line.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,12 @@
     </Compile>
     <Compile Include="loading_screen.Designer.cs">
       <DependentUpon>loading_screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loding_Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loding_Screen.Designer.cs">
+      <DependentUpon>Loding_Screen.cs</DependentUpon>
     </Compile>
     <Compile Include="Log-In Window.cs">
       <SubType>Form</SubType>
@@ -176,6 +188,9 @@
     <EmbeddedResource Include="Advance_Search.resx">
       <DependentUpon>Advance_Search.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="cmn_line.resx">
+      <DependentUpon>cmn_line.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="loading_screen.resx">
       <DependentUpon>loading_screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loding_Screen.resx">
+      <DependentUpon>Loding_Screen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Log-In Window.resx">
       <DependentUpon>Log-In Window.cs</DependentUpon>

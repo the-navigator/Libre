@@ -303,7 +303,7 @@
             this.search_box.ShadowDecoration.Parent = this.search_box;
             this.search_box.Size = new System.Drawing.Size(477, 32);
             this.search_box.TabIndex = 7;
-            this.search_box.TextChanged += new System.EventHandler(this.search_box_TextChanged);
+          //  this.search_box.TextChanged += new System.EventHandler(this.search_box_TextChanged);
             // 
             // frm_elipse
             // 
