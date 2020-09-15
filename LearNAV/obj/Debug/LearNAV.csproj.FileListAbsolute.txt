@@ -39,7 +39,6 @@ C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\bin\Debug\DotNet
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\bin\Debug\DotNetZip.xml
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\bin\Debug\LearNAV Engine.pdb
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\bin\Debug\System.Data.SQLite.xml
-C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\obj\Debug\LearNAV.csprojResolveAssemblyReference.cache
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\obj\Debug\LearNAV.Advance_Search.resources
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\obj\Debug\LearNAV.cmn_line.resources
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\obj\Debug\LearNAV.Dashboard.resources
@@ -56,3 +55,4 @@ C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\obj\Debug\LearNA
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\obj\Debug\LearNAV.csproj.GenerateResource.Cache
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\obj\Debug\LearNAV.exe
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\obj\Debug\LearNAV.pdb
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\obj\Debug\LearNAV.Shelf.resources

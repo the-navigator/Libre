@@ -185,6 +185,12 @@
     <Compile Include="Libre_SHELF.Designer.cs">
       <DependentUpon>Libre_SHELF.cs</DependentUpon>
     </Compile>
+    <Compile Include="Shelf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shelf.Designer.cs">
+      <DependentUpon>Shelf.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Advance_Search.resx">
       <DependentUpon>Advance_Search.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,6 +236,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Libre_SHELF.resx">
       <DependentUpon>Libre_SHELF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shelf.resx">
+      <DependentUpon>Shelf.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -280,6 +289,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo-ico.ico" />
+    <None Include="Resources\basic_magnifier_plus.png" />
+    <None Include="Resources\basic_clockwise.png" />
+    <None Include="Resources\arrows_rotate.png" />
+    <None Include="Resources\basic_flag1.png" />
+    <None Include="Resources\basic_download.png" />
+    <None Include="Resources\basic_heart.png" />
+    <None Include="Resources\basic_bookmark.png" />
+    <None Include="Resources\basic_settings.png" />
+    <None Include="Resources\basic_elaboration_calendar_empty.png" />
+    <None Include="Resources\basic_magnifier.png" />
     <None Include="Resources\srch.png" />
     <None Include="Resources\settings1.png" />
     <None Include="Resources\menu.png" />

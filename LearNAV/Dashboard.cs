@@ -224,7 +224,13 @@ namespace LearNAV
             lbl_c.ForeColor = Color.FromArgb(151, 209, 211);
             lbl_version.ForeColor = Color.FromArgb(151, 209, 211);
             label4.ForeColor = Color.FromArgb(130, 205, 185);
+            btn_details.FillColor = Color.FromArgb(223, 241, 242);
+            btn_details.FillColor2 = Color.FromArgb(223, 241, 242);
+            btn_change_view.FillColor = Color.FromArgb(223, 241, 242);
+            btn_change_view.FillColor2 = Color.FromArgb(223, 241, 242);
 
+            btn_details.ForeColor = Color.FromArgb(80, 83, 165);
+            btn_change_view.ForeColor = Color.FromArgb(80, 83, 165);
             }
             if (theme_mode.Checked == false)
             {
@@ -237,6 +243,13 @@ namespace LearNAV
                 lbl_c.ForeColor = Color.FromArgb(62, 92, 121);
                 lbl_version.ForeColor = Color.FromArgb(62, 92, 121);
                 label4.ForeColor = Color.FromArgb(62, 92, 121);
+
+                btn_details.FillColor = Color.FromArgb(27, 41, 54);
+                btn_details.FillColor2 = Color.FromArgb(27, 41, 54);
+                btn_change_view.FillColor = Color.FromArgb(27, 41, 54);
+                btn_change_view.FillColor2 = Color.FromArgb(27, 41, 54);
+                btn_details.ForeColor = Color.White;
+                btn_change_view.ForeColor = Color.White;
             }
 
             
@@ -288,6 +301,12 @@ namespace LearNAV
         {
             cmn_line cmn = new cmn_line();
             cmn.Show();
+        }
+
+        private void btn_details_Click(object sender, EventArgs e)
+        {
+            Shelf s = new Shelf();
+            s.Show();
         }
 
       
