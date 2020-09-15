@@ -8,15 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using LearNAV_Engine;
+using Guna;
 
 namespace LearNAV
 {
     public partial class Dashboard : Form
     {
-
+        Filter f = new Filter();
         DatabaseConnection LoadData = new DatabaseConnection();
         ListViewItem selected_to_open = new ListViewItem();
         Boolean is_panel_showed;
+        public int card_results;
+        public int list_view_count;
         //VARIABLES
         //Color:
    
@@ -24,10 +27,13 @@ namespace LearNAV
         public Dashboard()
         {
             InitializeComponent();
+            
+            
         }
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
+       
             LoadData_Show();
             search_results.Visible = true;
             search_results.BringToFront();
@@ -36,6 +42,14 @@ namespace LearNAV
             
             LoadCards();
         }
+
+        //LOADING SCREEN
+        /*
+        public void launch_loading_screen()
+        {
+            
+        }
+         * */
 
           private void btn_change_view_Click(object sender, EventArgs e)
         {
@@ -59,42 +73,59 @@ namespace LearNAV
 
         }
 
-        private void LoadData_Show()
-        {
-            try
-            {
-                LoadData.ShowFiltered();
+          private void LoadData_Show()
+          {
+              try
+              {
+                  LoadData.ShowFiltered();
 
 
-                if (LoadData.dt.Rows.Count > 0)
-                {
-                    for (int i = 0; i < LoadData.dt.Rows.Count; i++)
-                    {
+                  if (LoadData.dt.Rows.Count > 0)
+                  {
+                      for (int i = 0; i < LoadData.dt.Rows.Count; i++)
+                      {
 
-                        DataRow dr = LoadData.dt.Rows[i];
-                        ListViewItem fetched_data = new ListViewItem(dr["ID"].ToString());
-                        fetched_data.SubItems.Add(dr["ResourceN"].ToString());
-                        fetched_data.SubItems.Add(dr["ResourceLoc"].ToString());
+                          DataRow dr = LoadData.dt.Rows[i];
+                          ListViewItem fetched_data = new ListViewItem(dr["ID"].ToString());
+                          fetched_data.SubItems.Add(dr["ResourceN"].ToString());
+                          fetched_data.SubItems.Add(dr["ResourceLoc"].ToString());
 
-                        search_results.Items.Add(fetched_data);
+                          search_results.Items.Add(fetched_data);
 
-                    }
-                }
-                else
+                      }
+                  }
+                  else
 
-                    MessageBox.Show("No data were imported!" + " Counted Data: " + LoadData.rowcount.ToString(),
-                        "Database Connection Error!", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                      MessageBox.Show("No data were imported!" + " Counted Data: " + LoadData.rowcount.ToString(),
+                          "Database Connection Error!", MessageBoxButtons.OK, MessageBoxIcon.Stop);
 
 
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.Message);
-            }
-        }
+              }
+              catch (Exception e)
+              {
+                  MessageBox.Show(e.Message);
+              }
+          }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            f.FilterName(search_txtbx.Text);
+            
+            search_results.Clear();
+            if (f.dt_filter.Rows.Count > 0)
+            {
+                for (int i = 0; i < f.dt_filter.Rows.Count; i++)
+                {
+
+                    DataRow dr = f.dt_filter.Rows[i];
+                    ListViewItem fetched_data = new ListViewItem(dr["ID"].ToString());
+                    fetched_data.SubItems.Add(dr["ResourceN"].ToString());
+                    fetched_data.SubItems.Add(dr["ResourceLoc"].ToString());
+
+                    search_results.Items.Add(fetched_data);
+
+                }
+            }
 
         }
 
@@ -105,9 +136,16 @@ namespace LearNAV
 
         private void btn_accs_Click(object sender, EventArgs e)
         {
+            try{
             selected_to_open = search_results.SelectedItems[0];
             OpenResourceSelected(Environment.CurrentDirectory + "\\ResourceFiles\\" + selected_to_open.SubItems[2].Text);
+            } catch (Exception v)
+            {
+                MessageBox.Show("Please select an item from the list.", "Error!", MessageBoxButtons.RetryCancel, MessageBoxIcon.Exclamation);
+
+            }
         }
+    
 
         private void OpenResourceSelected(string item_r_path)
         {
@@ -131,19 +169,22 @@ namespace LearNAV
 
         private void LoadCards()
         {
+
+
             try
             {
-              
+
                 for (int i = 0; i < search_results.Items.Count; i++)
                 {
                     Resource_Card a = new Resource_Card();
                     a.RSC_ID = search_results.Items[i].Text;
                     a.RSC_NAME = search_results.Items[i].SubItems[1].Text;
                     a.RSC_LOC = search_results.Items[i].SubItems[2].Text;
- 
+
+
 
                     pnl_results.Controls.Add(a);
-
+                    card_results++;
 
                 }
 
@@ -153,7 +194,13 @@ namespace LearNAV
             {
                 MessageBox.Show(e.Message);
             }
+            finally
+            {
+                
+            }
         }
+
+
                 
         
         
@@ -226,6 +273,21 @@ namespace LearNAV
                 a_form.grp_filter.ForeColor = Color.White;
                 a_form.grp_sp_filters.ForeColor = Color.White;
             }
+        }
+
+        private void search_txtbx_TextChanged(object sender, EventArgs e)
+        {
+            if (search_txtbx.Text == null)
+            {
+                search_results.Items.Clear();
+                LoadData_Show();
+            }
+        }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            cmn_line cmn = new cmn_line();
+            cmn.Show();
         }
 
       

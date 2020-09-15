@@ -38,12 +38,14 @@ namespace LearNAV
             get { return _rsc_name; }
             set { _rsc_name = value; lbl_r_name.Text = value; }
         }
+        /*
         [Category("Custom")]
         public string RSC_AUTHOR
         {
             get { return _rsc_author; }
             set { _rsc_author = value; lbl_author.Text = value; }
         }
+         * */
         [Category("Custom")]
         public string RSC_LOC
         {
@@ -57,7 +59,7 @@ namespace LearNAV
         {
             lbl_id.Text = _rsc_id;
             lbl_r_name.Text = _rsc_name;
-            lbl_author.Text = _rsc_author;
+      //      lbl_author.Text = _rsc_author;
             //just remember the location ok?
             
 

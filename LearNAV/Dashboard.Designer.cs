@@ -32,19 +32,20 @@
             this.Main = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.btns_panel = new Guna.UI2.WinForms.Guna2Panel();
             this.theme_mode = new Guna.UI2.WinForms.Guna2ToggleSwitch();
-            this.guna2CircleButton2 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.exit_btn = new Guna.UI2.WinForms.Guna2CircleButton();
             this.main_pnl = new Guna.UI2.WinForms.Guna2Panel();
-            this.search_results = new System.Windows.Forms.ListView();
-            this.ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.pnl_results = new System.Windows.Forms.FlowLayoutPanel();
+            this.btn_change_view = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_details = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_accs = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_quick = new Guna.UI2.WinForms.Guna2Button();
             this.btn_advanced = new Guna.UI2.WinForms.Guna2Button();
             this.lbl_qck_srch = new System.Windows.Forms.Label();
             this.search_txtbx = new Guna.UI2.WinForms.Guna2TextBox();
+            this.search_results = new System.Windows.Forms.ListView();
+            this.ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.left_panel = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.right_panel = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
@@ -58,10 +59,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.lbl_version = new System.Windows.Forms.Label();
             this.theme_management = new System.Windows.Forms.ToolTip(this.components);
-            this.pnl_results = new System.Windows.Forms.FlowLayoutPanel();
-            this.btn_change_view = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.btns_panel.SuspendLayout();
             this.main_pnl.SuspendLayout();
             this.SuspendLayout();
@@ -74,6 +74,7 @@
             // btns_panel
             // 
             this.btns_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.btns_panel.Controls.Add(this.guna2Button1);
             this.btns_panel.Controls.Add(this.theme_mode);
             this.btns_panel.Location = new System.Drawing.Point(216, 17);
             this.btns_panel.Name = "btns_panel";
@@ -100,29 +101,17 @@
             this.theme_mode.UncheckedState.Parent = this.theme_mode;
             this.theme_mode.CheckedChanged += new System.EventHandler(this.theme_mode_CheckedChanged);
             // 
-            // guna2CircleButton2
-            // 
-            this.guna2CircleButton2.CheckedState.Parent = this.guna2CircleButton2;
-            this.guna2CircleButton2.CustomImages.Parent = this.guna2CircleButton2;
-            this.guna2CircleButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(201)))), ((int)(((byte)(107)))));
-            this.guna2CircleButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2CircleButton2.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton2.HoverState.Parent = this.guna2CircleButton2;
-            this.guna2CircleButton2.Location = new System.Drawing.Point(804, 8);
-            this.guna2CircleButton2.Name = "guna2CircleButton2";
-            this.guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton2.ShadowDecoration.Parent = this.guna2CircleButton2;
-            this.guna2CircleButton2.Size = new System.Drawing.Size(15, 15);
-            this.guna2CircleButton2.TabIndex = 1;
-            this.guna2CircleButton2.Text = "guna2CircleButton2";
-            // 
             // exit_btn
             // 
+            this.exit_btn.Animated = true;
+            this.exit_btn.BackColor = System.Drawing.Color.Transparent;
+            this.exit_btn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(81)))), ((int)(((byte)(81)))));
             this.exit_btn.CheckedState.Parent = this.exit_btn;
             this.exit_btn.CustomImages.Parent = this.exit_btn;
-            this.exit_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(81)))), ((int)(((byte)(81)))));
+            this.exit_btn.FillColor = System.Drawing.Color.White;
             this.exit_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.exit_btn.ForeColor = System.Drawing.Color.White;
+            this.exit_btn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(81)))), ((int)(((byte)(81)))));
             this.exit_btn.HoverState.Parent = this.exit_btn;
             this.exit_btn.Location = new System.Drawing.Point(825, 8);
             this.exit_btn.Name = "exit_btn";
@@ -137,7 +126,6 @@
             // 
             this.main_pnl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
             this.main_pnl.Controls.Add(this.pnl_results);
-            this.main_pnl.Controls.Add(this.search_results);
             this.main_pnl.Controls.Add(this.btn_change_view);
             this.main_pnl.Controls.Add(this.btns_panel);
             this.main_pnl.Controls.Add(this.btn_details);
@@ -146,53 +134,63 @@
             this.main_pnl.Controls.Add(this.btn_advanced);
             this.main_pnl.Controls.Add(this.lbl_qck_srch);
             this.main_pnl.Controls.Add(this.search_txtbx);
+            this.main_pnl.Controls.Add(this.search_results);
             this.main_pnl.Location = new System.Drawing.Point(12, 29);
             this.main_pnl.Name = "main_pnl";
             this.main_pnl.ShadowDecoration.Parent = this.main_pnl;
             this.main_pnl.Size = new System.Drawing.Size(828, 535);
             this.main_pnl.TabIndex = 1;
             // 
-            // search_results
+            // pnl_results
             // 
-            this.search_results.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.search_results.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.ID,
-            this.columnHeader2,
-            this.columnHeader3});
-            this.search_results.Font = new System.Drawing.Font("Gelion Regular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search_results.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(76)))), ((int)(((byte)(83)))));
-            this.search_results.FullRowSelect = true;
-            this.search_results.Location = new System.Drawing.Point(20, 90);
-            this.search_results.Name = "search_results";
-            this.search_results.Size = new System.Drawing.Size(791, 388);
-            this.search_results.TabIndex = 25;
-            this.search_results.UseCompatibleStateImageBehavior = false;
-            this.search_results.View = System.Windows.Forms.View.Details;
+            this.pnl_results.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnl_results.AutoScroll = true;
+            this.pnl_results.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.pnl_results.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnl_results.Location = new System.Drawing.Point(20, 90);
+            this.pnl_results.Name = "pnl_results";
+            this.pnl_results.Size = new System.Drawing.Size(791, 388);
+            this.pnl_results.TabIndex = 26;
             // 
-            // ID
+            // btn_change_view
             // 
-            this.ID.Text = "ID";
-            this.ID.Width = 40;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Name";
-            this.columnHeader2.Width = 300;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Resource";
-            this.columnHeader3.Width = 180;
+            this.btn_change_view.Animated = true;
+            this.btn_change_view.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(55)))), ((int)(((byte)(144)))));
+            this.btn_change_view.BorderRadius = 8;
+            this.btn_change_view.BorderThickness = 2;
+            this.btn_change_view.CheckedState.Parent = this.btn_change_view;
+            this.btn_change_view.CustomImages.Parent = this.btn_change_view;
+            this.btn_change_view.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
+            this.btn_change_view.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
+            this.btn_change_view.Font = new System.Drawing.Font("Gelion Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_change_view.ForeColor = System.Drawing.Color.White;
+            this.btn_change_view.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
+            this.btn_change_view.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(55)))), ((int)(((byte)(144)))));
+            this.btn_change_view.HoverState.Parent = this.btn_change_view;
+            this.btn_change_view.Location = new System.Drawing.Point(20, 469);
+            this.btn_change_view.Name = "btn_change_view";
+            this.btn_change_view.ShadowDecoration.Parent = this.btn_change_view;
+            this.btn_change_view.Size = new System.Drawing.Size(223, 36);
+            this.btn_change_view.TabIndex = 27;
+            this.btn_change_view.Text = "Change View";
+            this.btn_change_view.Click += new System.EventHandler(this.btn_change_view_Click);
             // 
             // btn_details
             // 
-            this.btn_details.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
+            this.btn_details.Animated = true;
+            this.btn_details.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(83)))), ((int)(((byte)(165)))));
+            this.btn_details.BorderRadius = 8;
+            this.btn_details.BorderThickness = 2;
             this.btn_details.CheckedState.Parent = this.btn_details;
             this.btn_details.CustomImages.Parent = this.btn_details;
-            this.btn_details.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(96)))), ((int)(((byte)(177)))));
-            this.btn_details.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(83)))), ((int)(((byte)(165)))));
+            this.btn_details.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
+            this.btn_details.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
             this.btn_details.Font = new System.Drawing.Font("Gelion Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_details.ForeColor = System.Drawing.Color.White;
+            this.btn_details.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(96)))), ((int)(((byte)(177)))));
+            this.btn_details.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(83)))), ((int)(((byte)(165)))));
             this.btn_details.HoverState.Parent = this.btn_details;
             this.btn_details.Location = new System.Drawing.Point(509, 471);
             this.btn_details.Name = "btn_details";
@@ -203,7 +201,8 @@
             // 
             // btn_accs
             // 
-            this.btn_accs.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
+            this.btn_accs.Animated = true;
+            this.btn_accs.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(179)))), ((int)(((byte)(154)))));
             this.btn_accs.CheckedState.Parent = this.btn_accs;
             this.btn_accs.CustomImages.Parent = this.btn_accs;
             this.btn_accs.Enabled = false;
@@ -211,10 +210,15 @@
             this.btn_accs.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(179)))), ((int)(((byte)(154)))));
             this.btn_accs.Font = new System.Drawing.Font("Gelion Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_accs.ForeColor = System.Drawing.Color.White;
+            this.btn_accs.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(179)))), ((int)(((byte)(127)))));
+            this.btn_accs.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(179)))), ((int)(((byte)(154)))));
             this.btn_accs.HoverState.Parent = this.btn_accs;
             this.btn_accs.Location = new System.Drawing.Point(628, 469);
             this.btn_accs.Name = "btn_accs";
+            this.btn_accs.ShadowDecoration.BorderRadius = 40;
+            this.btn_accs.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btn_accs.ShadowDecoration.Parent = this.btn_accs;
+            this.btn_accs.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(5, 5, 15, 15);
             this.btn_accs.Size = new System.Drawing.Size(183, 38);
             this.btn_accs.TabIndex = 23;
             this.btn_accs.Text = "Access";
@@ -222,12 +226,15 @@
             // 
             // btn_quick
             // 
+            this.btn_quick.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.btn_quick.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(92)))), ((int)(((byte)(121)))));
+            this.btn_quick.BorderThickness = 2;
             this.btn_quick.CheckedState.Parent = this.btn_quick;
             this.btn_quick.CustomImages.Parent = this.btn_quick;
             this.btn_quick.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.btn_quick.Font = new System.Drawing.Font("Gelion Bold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_quick.ForeColor = System.Drawing.Color.White;
-            this.btn_quick.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(61)))), ((int)(((byte)(81)))));
+            this.btn_quick.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.btn_quick.HoverState.Parent = this.btn_quick;
             this.btn_quick.Location = new System.Drawing.Point(552, 56);
             this.btn_quick.Name = "btn_quick";
@@ -239,17 +246,21 @@
             // 
             // btn_advanced
             // 
+            this.btn_advanced.Animated = true;
+            this.btn_advanced.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(92)))), ((int)(((byte)(121)))));
+            this.btn_advanced.BorderRadius = 12;
+            this.btn_advanced.BorderThickness = 2;
             this.btn_advanced.CheckedState.Parent = this.btn_advanced;
             this.btn_advanced.CustomImages.Parent = this.btn_advanced;
-            this.btn_advanced.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(92)))), ((int)(((byte)(121)))));
+            this.btn_advanced.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
             this.btn_advanced.Font = new System.Drawing.Font("Gelion Bold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_advanced.ForeColor = System.Drawing.Color.White;
-            this.btn_advanced.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(61)))), ((int)(((byte)(81)))));
+            this.btn_advanced.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(92)))), ((int)(((byte)(121)))));
             this.btn_advanced.HoverState.Parent = this.btn_advanced;
-            this.btn_advanced.Location = new System.Drawing.Point(638, 56);
+            this.btn_advanced.Location = new System.Drawing.Point(638, 55);
             this.btn_advanced.Name = "btn_advanced";
             this.btn_advanced.ShadowDecoration.Parent = this.btn_advanced;
-            this.btn_advanced.Size = new System.Drawing.Size(173, 28);
+            this.btn_advanced.Size = new System.Drawing.Size(173, 30);
             this.btn_advanced.TabIndex = 22;
             this.btn_advanced.Text = "Advanced Search";
             this.btn_advanced.Click += new System.EventHandler(this.btn_advanced_Click);
@@ -289,6 +300,39 @@
             this.search_txtbx.ShadowDecoration.Parent = this.search_txtbx;
             this.search_txtbx.Size = new System.Drawing.Size(564, 28);
             this.search_txtbx.TabIndex = 21;
+            this.search_txtbx.TextChanged += new System.EventHandler(this.search_txtbx_TextChanged);
+            // 
+            // search_results
+            // 
+            this.search_results.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.search_results.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ID,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.search_results.Font = new System.Drawing.Font("Gelion Regular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_results.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(76)))), ((int)(((byte)(83)))));
+            this.search_results.FullRowSelect = true;
+            this.search_results.Location = new System.Drawing.Point(20, 90);
+            this.search_results.Name = "search_results";
+            this.search_results.Size = new System.Drawing.Size(791, 388);
+            this.search_results.TabIndex = 25;
+            this.search_results.UseCompatibleStateImageBehavior = false;
+            this.search_results.View = System.Windows.Forms.View.Details;
+            // 
+            // ID
+            // 
+            this.ID.Text = "ID";
+            this.ID.Width = 40;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Name";
+            this.columnHeader2.Width = 300;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Resource";
+            this.columnHeader3.Width = 180;
             // 
             // left_panel
             // 
@@ -377,37 +421,6 @@
             this.theme_management.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.theme_management.ToolTipTitle = "Use this to  change how this windows look.";
             // 
-            // pnl_results
-            // 
-            this.pnl_results.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnl_results.AutoScroll = true;
-            this.pnl_results.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.pnl_results.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnl_results.Location = new System.Drawing.Point(20, 90);
-            this.pnl_results.Name = "pnl_results";
-            this.pnl_results.Size = new System.Drawing.Size(791, 388);
-            this.pnl_results.TabIndex = 26;
-            // 
-            // btn_change_view
-            // 
-            this.btn_change_view.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.btn_change_view.CheckedState.Parent = this.btn_change_view;
-            this.btn_change_view.CustomImages.Parent = this.btn_change_view;
-            this.btn_change_view.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(96)))), ((int)(((byte)(177)))));
-            this.btn_change_view.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(83)))), ((int)(((byte)(165)))));
-            this.btn_change_view.Font = new System.Drawing.Font("Gelion Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_change_view.ForeColor = System.Drawing.Color.White;
-            this.btn_change_view.HoverState.Parent = this.btn_change_view;
-            this.btn_change_view.Location = new System.Drawing.Point(20, 469);
-            this.btn_change_view.Name = "btn_change_view";
-            this.btn_change_view.ShadowDecoration.Parent = this.btn_change_view;
-            this.btn_change_view.Size = new System.Drawing.Size(223, 36);
-            this.btn_change_view.TabIndex = 27;
-            this.btn_change_view.Text = "Change View";
-            this.btn_change_view.Click += new System.EventHandler(this.btn_change_view_Click);
-            // 
             // guna2Elipse2
             // 
             this.guna2Elipse2.BorderRadius = 12;
@@ -417,6 +430,27 @@
             // 
             this.guna2Elipse5.BorderRadius = 12;
             this.guna2Elipse5.TargetControl = this.btn_details;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Animated = true;
+            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(92)))), ((int)(((byte)(121)))));
+            this.guna2Button1.BorderRadius = 8;
+            this.guna2Button1.BorderThickness = 2;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(92)))), ((int)(((byte)(121)))));
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(518, 8);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(22, 20);
+            this.guna2Button1.TabIndex = 0;
+            this.guna2Button1.Text = ">";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
             // 
             // Dashboard
             // 
@@ -428,7 +462,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lbl_c);
             this.Controls.Add(this.lbl_libre);
-            this.Controls.Add(this.guna2CircleButton2);
             this.Controls.Add(this.main_pnl);
             this.Controls.Add(this.exit_btn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -463,7 +496,6 @@
         private Guna.UI2.WinForms.Guna2Elipse txtboxelipse;
         private Guna.UI2.WinForms.Guna2DragControl mainDrag;
         private Guna.UI2.WinForms.Guna2DragControl pnl_drag;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton2;
         private Guna.UI2.WinForms.Guna2CircleButton exit_btn;
         private System.Windows.Forms.ListView search_results;
         private System.Windows.Forms.ColumnHeader ID;
@@ -479,5 +511,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton btn_change_view;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

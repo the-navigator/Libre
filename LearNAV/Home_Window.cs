@@ -178,12 +178,14 @@ namespace LearNAV
             selected_to_open = search_results.SelectedItems[0];
             OpenResourceSelected(Environment.CurrentDirectory + "\\ResourceFiles\\" + selected_to_open.SubItems[2].Text);
         }
-
+        /*
         private void search_box_TextChanged(object sender, EventArgs e)
         {
+            
+            /*
             try
             {
-                Filter f = new Filter(); //Filter is a LearNAV Engine Class.
+                Filter f = new Filter(); /
                 search_results.Items.Clear();
                 f.FilterName(search_box.Text);
 
@@ -213,6 +215,8 @@ namespace LearNAV
                 MessageBox.Show(w.Message);
             }
         }
+             * */
+           
 
         private void btn_accs_Click(object sender, EventArgs e)
         {

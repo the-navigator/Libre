@@ -104,19 +104,10 @@
 	"buffers":
 	[
 		{
-			"file": "Resource_Card.cs",
+			"file": "Extract.cs",
 			"settings":
 			{
-				"buffer_size": 2363,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Dashboard.cs",
-			"settings":
-			{
-				"buffer_size": 6222,
+				"buffer_size": 4800,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Unix"
 			}
@@ -150,6 +141,10 @@
 		"selected_items":
 		[
 			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
 				"",
 				"Activate Materialize Theme"
 			],
@@ -164,10 +159,6 @@
 			[
 				"omni",
 				"OmniSharpSublime: Fix Code Issue"
-			],
-			[
-				"instal",
-				"Package Control: Install Package"
 			],
 			[
 				"build",
@@ -250,6 +241,9 @@
 	],
 	"file_history":
 	[
+		"/C/Users/hp/Documents/Visual Studio 2012/Projects/Libre/LearNAV/loading_screen.cs",
+		"/C/Users/hp/Documents/Visual Studio 2012/Projects/Libre/LearNAV/Dashboard.cs",
+		"/C/Users/hp/Documents/Visual Studio 2012/Projects/Libre/LearNAV/Resource_Card.cs",
 		"/C/Users/hp/Documents/Visual Studio 2012/Projects/Libre/LearNAV/PDF Viewer.cs",
 		"/C/Users/hp/Documents/Visual Studio 2012/Projects/LearNAV/.gitattributes",
 		"/C/Users/hp/Documents/Visual Studio 2012/Projects/LearNAV/LearNAV/Extract.cs",
@@ -275,13 +269,14 @@
 	],
 	"find":
 	{
-		"height": 33.0
+		"height": 72.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 164.0,
 		"where_history":
 		[
+			"C:\\Users\\hp\\Documents\\Visual Studio 2012\\Projects\\Libre"
 		]
 	},
 	"find_state":
@@ -289,9 +284,10 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"DoWork"
 		],
-		"highlight": true,
-		"in_selection": false,
+		"highlight": false,
+		"in_selection": true,
 		"preserve_case": false,
 		"regex": false,
 		"replace_history":
@@ -306,52 +302,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Resource_Card.cs",
+					"file": "Extract.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2363,
+						"buffer_size": 4800,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								696,
-								696
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 405.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Dashboard.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6222,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2969,
-								2969
+								1894,
+								1894
 							]
 						],
 						"settings":
@@ -361,7 +329,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2117.0,
+						"translation.y": 806.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -372,7 +340,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 33.0
+		"height": 37.0
 	},
 	"input":
 	{
@@ -421,7 +389,7 @@
 	"project": "wow.sublime-project",
 	"replace":
 	{
-		"height": 62.0
+		"height": 70.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -459,7 +427,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 347.0,
+	"side_bar_width": 231.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
