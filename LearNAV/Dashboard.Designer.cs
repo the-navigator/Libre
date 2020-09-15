@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.Main = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.btns_panel = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.theme_mode = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.exit_btn = new Guna.UI2.WinForms.Guna2CircleButton();
             this.main_pnl = new Guna.UI2.WinForms.Guna2Panel();
@@ -51,7 +52,6 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.txtboxelipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.mainDrag = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.pnl_drag = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.lbl_libre = new System.Windows.Forms.Label();
@@ -61,7 +61,6 @@
             this.theme_management = new System.Windows.Forms.ToolTip(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.btns_panel.SuspendLayout();
             this.main_pnl.SuspendLayout();
             this.SuspendLayout();
@@ -76,11 +75,32 @@
             this.btns_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.btns_panel.Controls.Add(this.guna2Button1);
             this.btns_panel.Controls.Add(this.theme_mode);
-            this.btns_panel.Location = new System.Drawing.Point(216, 17);
+            this.btns_panel.Location = new System.Drawing.Point(216, 15);
             this.btns_panel.Name = "btns_panel";
             this.btns_panel.ShadowDecoration.Parent = this.btns_panel;
-            this.btns_panel.Size = new System.Drawing.Size(595, 34);
+            this.btns_panel.Size = new System.Drawing.Size(595, 36);
             this.btns_panel.TabIndex = 0;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Animated = true;
+            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(92)))), ((int)(((byte)(121)))));
+            this.guna2Button1.BorderRadius = 8;
+            this.guna2Button1.BorderThickness = 2;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(92)))), ((int)(((byte)(121)))));
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(488, 12);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(22, 20);
+            this.guna2Button1.TabIndex = 0;
+            this.guna2Button1.Text = ">";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
             // 
             // theme_mode
             // 
@@ -89,7 +109,7 @@
             this.theme_mode.CheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.theme_mode.CheckedState.InnerColor = System.Drawing.Color.White;
             this.theme_mode.CheckedState.Parent = this.theme_mode;
-            this.theme_mode.Location = new System.Drawing.Point(546, 8);
+            this.theme_mode.Location = new System.Drawing.Point(516, 12);
             this.theme_mode.Name = "theme_mode";
             this.theme_mode.ShadowDecoration.Parent = this.theme_mode;
             this.theme_mode.Size = new System.Drawing.Size(35, 20);
@@ -164,12 +184,12 @@
             this.btn_change_view.CustomImages.Parent = this.btn_change_view;
             this.btn_change_view.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
             this.btn_change_view.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
-            this.btn_change_view.Font = new System.Drawing.Font("Gelion Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_change_view.Font = new System.Drawing.Font("Fira Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_change_view.ForeColor = System.Drawing.Color.White;
             this.btn_change_view.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
             this.btn_change_view.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(55)))), ((int)(((byte)(144)))));
             this.btn_change_view.HoverState.Parent = this.btn_change_view;
-            this.btn_change_view.Location = new System.Drawing.Point(20, 469);
+            this.btn_change_view.Location = new System.Drawing.Point(20, 471);
             this.btn_change_view.Name = "btn_change_view";
             this.btn_change_view.ShadowDecoration.Parent = this.btn_change_view;
             this.btn_change_view.Size = new System.Drawing.Size(223, 36);
@@ -187,17 +207,18 @@
             this.btn_details.CustomImages.Parent = this.btn_details;
             this.btn_details.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
             this.btn_details.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
-            this.btn_details.Font = new System.Drawing.Font("Gelion Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_details.Font = new System.Drawing.Font("Fira Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_details.ForeColor = System.Drawing.Color.White;
             this.btn_details.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(96)))), ((int)(((byte)(177)))));
             this.btn_details.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(83)))), ((int)(((byte)(165)))));
             this.btn_details.HoverState.Parent = this.btn_details;
-            this.btn_details.Location = new System.Drawing.Point(509, 471);
+            this.btn_details.Location = new System.Drawing.Point(486, 473);
             this.btn_details.Name = "btn_details";
             this.btn_details.ShadowDecoration.Parent = this.btn_details;
-            this.btn_details.Size = new System.Drawing.Size(113, 36);
+            this.btn_details.Size = new System.Drawing.Size(136, 36);
             this.btn_details.TabIndex = 24;
-            this.btn_details.Text = "Details";
+            this.btn_details.Text = "Visit Shelf";
+            this.btn_details.Click += new System.EventHandler(this.btn_details_Click);
             // 
             // btn_accs
             // 
@@ -208,12 +229,12 @@
             this.btn_accs.Enabled = false;
             this.btn_accs.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(179)))), ((int)(((byte)(127)))));
             this.btn_accs.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(179)))), ((int)(((byte)(154)))));
-            this.btn_accs.Font = new System.Drawing.Font("Gelion Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_accs.Font = new System.Drawing.Font("Fira Sans Heavy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_accs.ForeColor = System.Drawing.Color.White;
             this.btn_accs.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(179)))), ((int)(((byte)(127)))));
             this.btn_accs.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(179)))), ((int)(((byte)(154)))));
             this.btn_accs.HoverState.Parent = this.btn_accs;
-            this.btn_accs.Location = new System.Drawing.Point(628, 469);
+            this.btn_accs.Location = new System.Drawing.Point(628, 471);
             this.btn_accs.Name = "btn_accs";
             this.btn_accs.ShadowDecoration.BorderRadius = 40;
             this.btn_accs.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -232,7 +253,7 @@
             this.btn_quick.CheckedState.Parent = this.btn_quick;
             this.btn_quick.CustomImages.Parent = this.btn_quick;
             this.btn_quick.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.btn_quick.Font = new System.Drawing.Font("Gelion Bold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_quick.Font = new System.Drawing.Font("Fira Sans SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_quick.ForeColor = System.Drawing.Color.White;
             this.btn_quick.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.btn_quick.HoverState.Parent = this.btn_quick;
@@ -253,7 +274,7 @@
             this.btn_advanced.CheckedState.Parent = this.btn_advanced;
             this.btn_advanced.CustomImages.Parent = this.btn_advanced;
             this.btn_advanced.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
-            this.btn_advanced.Font = new System.Drawing.Font("Gelion Bold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_advanced.Font = new System.Drawing.Font("Fira Sans SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_advanced.ForeColor = System.Drawing.Color.White;
             this.btn_advanced.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(92)))), ((int)(((byte)(121)))));
             this.btn_advanced.HoverState.Parent = this.btn_advanced;
@@ -269,16 +290,18 @@
             // 
             this.lbl_qck_srch.AutoSize = true;
             this.lbl_qck_srch.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_qck_srch.Font = new System.Drawing.Font("Gelion Black", 22F, System.Drawing.FontStyle.Bold);
+            this.lbl_qck_srch.Font = new System.Drawing.Font("Fira Sans", 22F, System.Drawing.FontStyle.Bold);
             this.lbl_qck_srch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(205)))), ((int)(((byte)(185)))));
             this.lbl_qck_srch.Location = new System.Drawing.Point(14, 15);
             this.lbl_qck_srch.Name = "lbl_qck_srch";
-            this.lbl_qck_srch.Size = new System.Drawing.Size(196, 36);
+            this.lbl_qck_srch.Size = new System.Drawing.Size(191, 36);
             this.lbl_qck_srch.TabIndex = 0;
             this.lbl_qck_srch.Text = "Quick Search";
             // 
             // search_txtbx
             // 
+            this.search_txtbx.AutoRoundedCorners = true;
+            this.search_txtbx.BorderRadius = 13;
             this.search_txtbx.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.search_txtbx.DefaultText = "";
             this.search_txtbx.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -309,7 +332,7 @@
             this.ID,
             this.columnHeader2,
             this.columnHeader3});
-            this.search_results.Font = new System.Drawing.Font("Gelion Regular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_results.Font = new System.Drawing.Font("Fira Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search_results.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(76)))), ((int)(((byte)(83)))));
             this.search_results.FullRowSelect = true;
             this.search_results.Location = new System.Drawing.Point(20, 90);
@@ -358,11 +381,6 @@
             // 
             this.guna2Elipse4.BorderRadius = 12;
             this.guna2Elipse4.TargetControl = this.btn_details;
-            // 
-            // txtboxelipse
-            // 
-            this.txtboxelipse.BorderRadius = 30;
-            this.txtboxelipse.TargetControl = this.search_txtbx;
             // 
             // mainDrag
             // 
@@ -431,27 +449,6 @@
             this.guna2Elipse5.BorderRadius = 12;
             this.guna2Elipse5.TargetControl = this.btn_details;
             // 
-            // guna2Button1
-            // 
-            this.guna2Button1.Animated = true;
-            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(92)))), ((int)(((byte)(121)))));
-            this.guna2Button1.BorderRadius = 8;
-            this.guna2Button1.BorderThickness = 2;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(92)))), ((int)(((byte)(121)))));
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(518, 8);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(22, 20);
-            this.guna2Button1.TabIndex = 0;
-            this.guna2Button1.Text = ">";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -493,7 +490,6 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private Guna.UI2.WinForms.Guna2GradientButton btn_details;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
-        private Guna.UI2.WinForms.Guna2Elipse txtboxelipse;
         private Guna.UI2.WinForms.Guna2DragControl mainDrag;
         private Guna.UI2.WinForms.Guna2DragControl pnl_drag;
         private Guna.UI2.WinForms.Guna2CircleButton exit_btn;
