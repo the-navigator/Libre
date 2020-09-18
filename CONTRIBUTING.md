@@ -1,6 +1,6 @@
 # Contributing to the Libre Project
 
-## We thank you for taking your time to visit and contribute to the project!🕵🏼‍♂️
+## We thank you for taking your time to visit and contribute to the project!
 
 This project is managed, headed and continously developed by **High School students** who have a passion for developing a software that will help their fellow students 
 gain access to learning resources. It started as a research project and we together with our instructors and teachers paved its way onto becoming a full-pledged open-source
