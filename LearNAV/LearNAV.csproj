@@ -289,6 +289,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo-ico.ico" />
+    <None Include="Resources\final_test1.png" />
+    <None Include="Resources\final_test.png" />
     <None Include="Resources\basic_magnifier_plus.png" />
     <None Include="Resources\basic_clockwise.png" />
     <None Include="Resources\arrows_rotate.png" />

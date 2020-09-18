@@ -104,12 +104,31 @@
 	"buffers":
 	[
 		{
-			"file": "Extract.cs",
+			"file": "Shelf.cs",
 			"settings":
 			{
-				"buffer_size": 4800,
+				"buffer_size": 932,
 				"encoding": "UTF-8 with BOM",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "ROOTDIR: C:\\Users\\hp\\Documents\\Visual Studio 2012\\Projects\\Libre\nTime: 2020/09/15/20:55\n\n\n\n════════════════════╤═══════════════╤════════════╤════════════\n           Languages│           Size│       Files│       Lines\n────────────────────┼───────────────┼────────────┼────────────\n            Markdown│           607B│           1│          17\n════════════════════╧═══════════════╧════════════╧════════════\n",
+			"settings":
+			{
+				"buffer_size": 406,
+				"line_ending": "Windows",
+				"name": "CodeCounter - Overview",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"file": "/C/Users/hp/Documents/Visual Studio 2012/Projects/Libre/LICENSE",
+			"settings":
+			{
+				"buffer_size": 35149,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -237,10 +256,12 @@
 	"expanded_folders":
 	[
 		"/C/Users/hp/Documents/Visual Studio 2012/Projects/Libre",
-		"/C/Users/hp/Documents/Visual Studio 2012/Projects/Libre/LearNAV"
+		"/C/Users/hp/Documents/Visual Studio 2012/Projects/Libre/LearNAV",
+		"/C/Users/hp/Documents/Visual Studio 2012/Projects/Libre/LearNAV/Properties"
 	],
 	"file_history":
 	[
+		"/C/Users/hp/Documents/Visual Studio 2012/Projects/Libre/LearNAV/Extract.cs",
 		"/C/Users/hp/Documents/Visual Studio 2012/Projects/Libre/LearNAV/loading_screen.cs",
 		"/C/Users/hp/Documents/Visual Studio 2012/Projects/Libre/LearNAV/Dashboard.cs",
 		"/C/Users/hp/Documents/Visual Studio 2012/Projects/Libre/LearNAV/Resource_Card.cs",
@@ -281,13 +302,20 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
+			"search",
+			"text",
+			"search",
+			"text",
+			"guna",
+			"gunatext",
+			"textbox",
 			"DoWork"
 		],
 		"highlight": false,
-		"in_selection": true,
+		"in_selection": false,
 		"preserve_case": false,
 		"regex": false,
 		"replace_history":
@@ -296,8 +324,8 @@
 		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
-		"whole_word": true,
-		"wrap": true
+		"whole_word": false,
+		"wrap": false
 	},
 	"groups":
 	[
@@ -307,19 +335,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Extract.cs",
+					"file": "Shelf.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4800,
+						"buffer_size": 932,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1282,
-								1175
+								299,
+								299
 							]
 						],
 						"settings":
@@ -329,10 +357,101 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 806.0,
+						"translation.y": 182.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 406,
+						"regions":
+						{
+							"code-counter":
+							{
+								"flags": 818,
+								"regions":
+								[
+									[
+										8,
+										64
+									]
+								],
+								"scope": "entity.name.filename"
+							}
+						},
+						"selection":
+						[
+							[
+								406,
+								406
+							]
+						],
+						"settings":
+						{
+							"code_overview":
+							{
+								"Markdown":
+								[
+									607,
+									1,
+									17,
+									{
+										"md":
+										[
+											[
+												"README.md",
+												17,
+												607
+											]
+										]
+									}
+								]
+							},
+							"font_face": "Lucida Console",
+							"rootdir": "C:\\Users\\hp\\Documents\\Visual Studio 2012\\Projects\\Libre",
+							"syntax": "code-counter.sublime-syntax",
+							"time": "2020/09/15/20:55",
+							"translate_tabs_to_spaces": true,
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/hp/Documents/Visual Studio 2012/Projects/Libre/LICENSE",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 35149,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								469,
+								469
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Materialize/Langs/license.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 9058.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -344,7 +463,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 72.0
 	},
 	"layout":
 	{

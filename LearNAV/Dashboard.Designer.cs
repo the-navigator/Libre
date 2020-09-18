@@ -30,23 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.Main = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.btns_panel = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.theme_mode = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.exit_btn = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.main_pnl = new Guna.UI2.WinForms.Guna2Panel();
-            this.pnl_results = new System.Windows.Forms.FlowLayoutPanel();
-            this.btn_change_view = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btn_details = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btn_accs = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btn_quick = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_advanced = new Guna.UI2.WinForms.Guna2Button();
-            this.lbl_qck_srch = new System.Windows.Forms.Label();
-            this.search_txtbx = new Guna.UI2.WinForms.Guna2TextBox();
-            this.search_results = new System.Windows.Forms.ListView();
-            this.ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.left_panel = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.right_panel = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
@@ -61,7 +45,22 @@
             this.theme_management = new System.Windows.Forms.ToolTip(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.btns_panel.SuspendLayout();
+            this.main_pnl = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.theme_mode = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+            this.pnl_results = new System.Windows.Forms.FlowLayoutPanel();
+            this.btn_change_view = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_details = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_accs = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_quick = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_advanced = new Guna.UI2.WinForms.Guna2Button();
+            this.lbl_qck_srch = new System.Windows.Forms.Label();
+            this.search_txtbx = new Guna.UI2.WinForms.Guna2TextBox();
+            this.search_results = new System.Windows.Forms.ListView();
+            this.ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.main_pnl.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,57 +68,6 @@
             // 
             this.Main.BorderRadius = 30;
             this.Main.TargetControl = this;
-            // 
-            // btns_panel
-            // 
-            this.btns_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.btns_panel.Controls.Add(this.guna2Button1);
-            this.btns_panel.Controls.Add(this.theme_mode);
-            this.btns_panel.Location = new System.Drawing.Point(216, 15);
-            this.btns_panel.Name = "btns_panel";
-            this.btns_panel.ShadowDecoration.Parent = this.btns_panel;
-            this.btns_panel.Size = new System.Drawing.Size(595, 36);
-            this.btns_panel.TabIndex = 0;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.Animated = true;
-            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(92)))), ((int)(((byte)(121)))));
-            this.guna2Button1.BorderRadius = 8;
-            this.guna2Button1.BorderThickness = 2;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(92)))), ((int)(((byte)(121)))));
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(488, 12);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(22, 20);
-            this.guna2Button1.TabIndex = 0;
-            this.guna2Button1.Text = ">";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
-            // 
-            // theme_mode
-            // 
-            this.theme_mode.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(194)))), ((int)(((byte)(196)))));
-            this.theme_mode.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(194)))), ((int)(((byte)(196)))));
-            this.theme_mode.CheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.theme_mode.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.theme_mode.CheckedState.Parent = this.theme_mode;
-            this.theme_mode.Location = new System.Drawing.Point(516, 12);
-            this.theme_mode.Name = "theme_mode";
-            this.theme_mode.ShadowDecoration.Parent = this.theme_mode;
-            this.theme_mode.Size = new System.Drawing.Size(35, 20);
-            this.theme_mode.TabIndex = 0;
-            this.theme_mode.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.theme_mode.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.theme_mode.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.theme_mode.UncheckedState.InnerColor = System.Drawing.Color.White;
-            this.theme_mode.UncheckedState.Parent = this.theme_mode;
-            this.theme_mode.CheckedChanged += new System.EventHandler(this.theme_mode_CheckedChanged);
             // 
             // exit_btn
             // 
@@ -142,12 +90,106 @@
             this.exit_btn.Text = "guna2CircleButton1";
             this.exit_btn.Click += new System.EventHandler(this.exit_btn_Click);
             // 
+            // left_panel
+            // 
+            this.left_panel.BorderRadius = 15;
+            // 
+            // right_panel
+            // 
+            this.right_panel.BorderRadius = 30;
+            this.right_panel.TargetControl = this.main_pnl;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 15;
+            this.guna2Elipse1.TargetControl = this.btn_advanced;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.BorderRadius = 12;
+            this.guna2Elipse3.TargetControl = this.btn_accs;
+            // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.BorderRadius = 12;
+            this.guna2Elipse4.TargetControl = this.btn_details;
+            // 
+            // mainDrag
+            // 
+            this.mainDrag.TargetControl = this;
+            // 
+            // pnl_drag
+            // 
+            this.pnl_drag.TargetControl = this.main_pnl;
+            // 
+            // lbl_libre
+            // 
+            this.lbl_libre.AutoSize = true;
+            this.lbl_libre.Font = new System.Drawing.Font("Berlin Rounded Bold", 12F, System.Drawing.FontStyle.Bold);
+            this.lbl_libre.ForeColor = System.Drawing.Color.White;
+            this.lbl_libre.Location = new System.Drawing.Point(336, 4);
+            this.lbl_libre.Name = "lbl_libre";
+            this.lbl_libre.Size = new System.Drawing.Size(73, 19);
+            this.lbl_libre.TabIndex = 26;
+            this.lbl_libre.Text = "L i b r e.";
+            // 
+            // lbl_c
+            // 
+            this.lbl_c.AutoSize = true;
+            this.lbl_c.Font = new System.Drawing.Font("Gelion Regular", 8F, System.Drawing.FontStyle.Italic);
+            this.lbl_c.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(92)))), ((int)(((byte)(121)))));
+            this.lbl_c.Location = new System.Drawing.Point(29, 9);
+            this.lbl_c.Name = "lbl_c";
+            this.lbl_c.Size = new System.Drawing.Size(126, 13);
+            this.lbl_c.TabIndex = 27;
+            this.lbl_c.Text = "(C) 2019-2020 | team jar.";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Gelion Black", 12F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(92)))), ((int)(((byte)(121)))));
+            this.label4.Location = new System.Drawing.Point(415, 4);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(98, 19);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "Beta Version";
+            // 
+            // lbl_version
+            // 
+            this.lbl_version.AutoSize = true;
+            this.lbl_version.Font = new System.Drawing.Font("Gelion Regular", 12F, System.Drawing.FontStyle.Italic);
+            this.lbl_version.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(92)))), ((int)(((byte)(121)))));
+            this.lbl_version.Location = new System.Drawing.Point(685, 4);
+            this.lbl_version.Name = "lbl_version";
+            this.lbl_version.Size = new System.Drawing.Size(113, 19);
+            this.lbl_version.TabIndex = 29;
+            this.lbl_version.Text = "version 2. 0. 0. 1";
+            // 
+            // theme_management
+            // 
+            this.theme_management.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.theme_management.ToolTipTitle = "Use this to  change how this windows look.";
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.BorderRadius = 12;
+            this.guna2Elipse2.TargetControl = this.btn_change_view;
+            // 
+            // guna2Elipse5
+            // 
+            this.guna2Elipse5.BorderRadius = 12;
+            this.guna2Elipse5.TargetControl = this.btn_details;
+            // 
             // main_pnl
             // 
             this.main_pnl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
+            this.main_pnl.BackgroundImage = global::LearNAV.Properties.Resources.final_test1;
+            this.main_pnl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.main_pnl.Controls.Add(this.guna2Button1);
+            this.main_pnl.Controls.Add(this.theme_mode);
             this.main_pnl.Controls.Add(this.pnl_results);
             this.main_pnl.Controls.Add(this.btn_change_view);
-            this.main_pnl.Controls.Add(this.btns_panel);
             this.main_pnl.Controls.Add(this.btn_details);
             this.main_pnl.Controls.Add(this.btn_accs);
             this.main_pnl.Controls.Add(this.btn_quick);
@@ -160,6 +202,46 @@
             this.main_pnl.ShadowDecoration.Parent = this.main_pnl;
             this.main_pnl.Size = new System.Drawing.Size(828, 535);
             this.main_pnl.TabIndex = 1;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Animated = true;
+            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(92)))), ((int)(((byte)(121)))));
+            this.guna2Button1.BorderRadius = 8;
+            this.guna2Button1.BorderThickness = 2;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(92)))), ((int)(((byte)(121)))));
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(614, 31);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(22, 20);
+            this.guna2Button1.TabIndex = 0;
+            this.guna2Button1.Text = ">";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
+            // 
+            // theme_mode
+            // 
+            this.theme_mode.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(194)))), ((int)(((byte)(196)))));
+            this.theme_mode.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(194)))), ((int)(((byte)(196)))));
+            this.theme_mode.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.theme_mode.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.theme_mode.CheckedState.Parent = this.theme_mode;
+            this.theme_mode.Location = new System.Drawing.Point(208, 31);
+            this.theme_mode.Name = "theme_mode";
+            this.theme_mode.ShadowDecoration.Parent = this.theme_mode;
+            this.theme_mode.Size = new System.Drawing.Size(35, 20);
+            this.theme_mode.TabIndex = 0;
+            this.theme_mode.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.theme_mode.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.theme_mode.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.theme_mode.UncheckedState.InnerColor = System.Drawing.Color.White;
+            this.theme_mode.UncheckedState.Parent = this.theme_mode;
+            this.theme_mode.CheckedChanged += new System.EventHandler(this.theme_mode_CheckedChanged);
             // 
             // pnl_results
             // 
@@ -357,97 +439,10 @@
             this.columnHeader3.Text = "Resource";
             this.columnHeader3.Width = 180;
             // 
-            // left_panel
+            // guna2Elipse6
             // 
-            this.left_panel.BorderRadius = 15;
-            this.left_panel.TargetControl = this.btns_panel;
-            // 
-            // right_panel
-            // 
-            this.right_panel.BorderRadius = 30;
-            this.right_panel.TargetControl = this.main_pnl;
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 15;
-            this.guna2Elipse1.TargetControl = this.btn_advanced;
-            // 
-            // guna2Elipse3
-            // 
-            this.guna2Elipse3.BorderRadius = 12;
-            this.guna2Elipse3.TargetControl = this.btn_accs;
-            // 
-            // guna2Elipse4
-            // 
-            this.guna2Elipse4.BorderRadius = 12;
-            this.guna2Elipse4.TargetControl = this.btn_details;
-            // 
-            // mainDrag
-            // 
-            this.mainDrag.TargetControl = this;
-            // 
-            // pnl_drag
-            // 
-            this.pnl_drag.TargetControl = this.main_pnl;
-            // 
-            // lbl_libre
-            // 
-            this.lbl_libre.AutoSize = true;
-            this.lbl_libre.Font = new System.Drawing.Font("Berlin Rounded Bold", 12F, System.Drawing.FontStyle.Bold);
-            this.lbl_libre.ForeColor = System.Drawing.Color.White;
-            this.lbl_libre.Location = new System.Drawing.Point(336, 4);
-            this.lbl_libre.Name = "lbl_libre";
-            this.lbl_libre.Size = new System.Drawing.Size(73, 19);
-            this.lbl_libre.TabIndex = 26;
-            this.lbl_libre.Text = "L i b r e.";
-            // 
-            // lbl_c
-            // 
-            this.lbl_c.AutoSize = true;
-            this.lbl_c.Font = new System.Drawing.Font("Gelion Regular", 8F, System.Drawing.FontStyle.Italic);
-            this.lbl_c.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(92)))), ((int)(((byte)(121)))));
-            this.lbl_c.Location = new System.Drawing.Point(29, 9);
-            this.lbl_c.Name = "lbl_c";
-            this.lbl_c.Size = new System.Drawing.Size(126, 13);
-            this.lbl_c.TabIndex = 27;
-            this.lbl_c.Text = "(C) 2019-2020 | team jar.";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Gelion Black", 12F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(92)))), ((int)(((byte)(121)))));
-            this.label4.Location = new System.Drawing.Point(415, 4);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 19);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "Beta Version";
-            // 
-            // lbl_version
-            // 
-            this.lbl_version.AutoSize = true;
-            this.lbl_version.Font = new System.Drawing.Font("Gelion Regular", 12F, System.Drawing.FontStyle.Italic);
-            this.lbl_version.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(92)))), ((int)(((byte)(121)))));
-            this.lbl_version.Location = new System.Drawing.Point(685, 4);
-            this.lbl_version.Name = "lbl_version";
-            this.lbl_version.Size = new System.Drawing.Size(113, 19);
-            this.lbl_version.TabIndex = 29;
-            this.lbl_version.Text = "version 2. 0. 0. 1";
-            // 
-            // theme_management
-            // 
-            this.theme_management.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.theme_management.ToolTipTitle = "Use this to  change how this windows look.";
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.BorderRadius = 12;
-            this.guna2Elipse2.TargetControl = this.btn_change_view;
-            // 
-            // guna2Elipse5
-            // 
-            this.guna2Elipse5.BorderRadius = 12;
-            this.guna2Elipse5.TargetControl = this.btn_details;
+            this.guna2Elipse6.BorderRadius = 12;
+            this.guna2Elipse6.TargetControl = this.search_results;
             // 
             // Dashboard
             // 
@@ -466,7 +461,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);
-            this.btns_panel.ResumeLayout(false);
             this.main_pnl.ResumeLayout(false);
             this.main_pnl.PerformLayout();
             this.ResumeLayout(false);
@@ -478,7 +472,6 @@
 
         private Guna.UI2.WinForms.Guna2Elipse Main;
         private Guna.UI2.WinForms.Guna2Panel main_pnl;
-        private Guna.UI2.WinForms.Guna2Panel btns_panel;
         private Guna.UI2.WinForms.Guna2Elipse left_panel;
         private Guna.UI2.WinForms.Guna2Elipse right_panel;
         private Guna.UI2.WinForms.Guna2Button btn_quick;
@@ -508,5 +501,6 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse6;
     }
 }
