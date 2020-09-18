@@ -112,12 +112,12 @@ namespace LearNAV
             f.FilterName(search_txtbx.Text);
             
             search_results.Clear();
-            if (f.dt_filter.Rows.Count > 0)
+            if (f.dt.Rows.Count > 0)
             {
-                for (int i = 0; i < f.dt_filter.Rows.Count; i++)
+                for (int i = 0; i < f.dt.Rows.Count; i++)
                 {
 
-                    DataRow dr = f.dt_filter.Rows[i];
+                    DataRow dr = f.dt.Rows[i];
                     ListViewItem fetched_data = new ListViewItem(dr["ID"].ToString());
                     fetched_data.SubItems.Add(dr["ResourceN"].ToString());
                     fetched_data.SubItems.Add(dr["ResourceLoc"].ToString());
@@ -217,7 +217,7 @@ namespace LearNAV
             if (theme_mode.Checked == true) {
                 this.BackColor = Color.White;
             main_pnl.BackColor = Color.FromArgb(223, 241, 242);
-            btns_panel.BackColor = Color.White;
+          //  btns_panel.BackColor = Color.White;
             btn_quick.BackColor = Color.FromArgb(115, 194, 196);
             lbl_qck_srch.ForeColor = Color.FromArgb(62, 92, 121);
             lbl_libre.ForeColor = Color.FromArgb(19, 28, 37);
@@ -236,7 +236,7 @@ namespace LearNAV
             {
                 this.BackColor = Color.FromArgb(19, 28, 37);
                 main_pnl.BackColor = Color.FromArgb(27, 41, 54);
-                btns_panel.BackColor = Color.FromArgb(19, 28, 37);
+               // btns_panel.BackColor = Color.FromArgb(19, 28, 37);
                 btn_quick.BackColor = Color.FromArgb(115, 194, 196);
                 lbl_qck_srch.ForeColor = Color.FromArgb(130, 205, 185);
                 lbl_libre.ForeColor = Color.White;

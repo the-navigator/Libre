@@ -33,12 +33,10 @@
             this.pnl_above = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.exit_btn = new Guna.UI2.WinForms.Guna2CircleButton();
             this.lbl_title = new System.Windows.Forms.Label();
-            this.search_bar = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.btn_refresh = new Guna.UI2.WinForms.Guna2Button();
             this.btn_new_tags = new Guna.UI2.WinForms.Guna2Button();
             this.btn_new_resource = new Guna.UI2.WinForms.Guna2Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.pnl_tags = new System.Windows.Forms.FlowLayoutPanel();
             this.item_list = new System.Windows.Forms.ListView();
@@ -54,9 +52,11 @@
             this.btn_new_folder = new Guna.UI2.WinForms.Guna2Button();
             this.pnl_methods = new System.Windows.Forms.Panel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.search_bar = new Guna.UI2.WinForms.Guna2TextBox();
             this.pnl_above.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnl_methods.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // _shelf_elipse
@@ -77,7 +77,7 @@
             this.pnl_above.ShadowDepth = 12;
             this.pnl_above.ShadowShift = 3;
             this.pnl_above.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.Dropped;
-            this.pnl_above.Size = new System.Drawing.Size(1252, 43);
+            this.pnl_above.Size = new System.Drawing.Size(967, 43);
             this.pnl_above.TabIndex = 0;
             // 
             // exit_btn
@@ -111,42 +111,6 @@
             this.lbl_title.Size = new System.Drawing.Size(99, 19);
             this.lbl_title.TabIndex = 0;
             this.lbl_title.Text = "Libr-e SHELF";
-            // 
-            // search_bar
-            // 
-            this.search_bar.Animated = true;
-            this.search_bar.AutoRoundedCorners = true;
-            this.search_bar.BackColor = System.Drawing.Color.Transparent;
-            this.search_bar.BorderRadius = 17;
-            this.search_bar.BorderThickness = 2;
-            this.search_bar.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.search_bar.DefaultText = "";
-            this.search_bar.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.search_bar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.search_bar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.search_bar.DisabledState.Parent = this.search_bar;
-            this.search_bar.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.search_bar.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.search_bar.FocusedState.Parent = this.search_bar;
-            this.search_bar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search_bar.HoverState.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.search_bar.HoverState.Parent = this.search_bar;
-            this.search_bar.IconLeft = global::LearNAV.Properties.Resources.basic_magnifier;
-            this.search_bar.IconLeftOffset = new System.Drawing.Point(10, 0);
-            this.search_bar.Location = new System.Drawing.Point(12, 45);
-            this.search_bar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.search_bar.Name = "search_bar";
-            this.search_bar.PasswordChar = '\0';
-            this.search_bar.PlaceholderText = "";
-            this.search_bar.SelectedText = "";
-            this.search_bar.ShadowDecoration.BorderRadius = 15;
-            this.search_bar.ShadowDecoration.Color = System.Drawing.SystemColors.ControlDarkDark;
-            this.search_bar.ShadowDecoration.Depth = 100;
-            this.search_bar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.search_bar.ShadowDecoration.Parent = this.search_bar;
-            this.search_bar.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(5, 5, 5, 100);
-            this.search_bar.Size = new System.Drawing.Size(909, 36);
-            this.search_bar.TabIndex = 1;
             // 
             // guna2Button4
             // 
@@ -239,17 +203,6 @@
             this.btn_new_resource.Text = "New Resource";
             this.btn_new_resource.Click += new System.EventHandler(this.btn_new_resource_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::LearNAV.Properties.Resources.basic_settings;
-            this.pictureBox2.Location = new System.Drawing.Point(927, 54);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(27, 27);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -258,7 +211,7 @@
             this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 558);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(1252, 10);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(967, 10);
             this.guna2GradientPanel1.TabIndex = 9;
             // 
             // pnl_tags
@@ -369,8 +322,7 @@
             // pnl_methods
             // 
             this.pnl_methods.Controls.Add(this.guna2Button1);
-            this.pnl_methods.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnl_methods.Location = new System.Drawing.Point(975, 43);
+            this.pnl_methods.Location = new System.Drawing.Point(975, 45);
             this.pnl_methods.Name = "pnl_methods";
             this.pnl_methods.Size = new System.Drawing.Size(277, 515);
             this.pnl_methods.TabIndex = 14;
@@ -397,11 +349,58 @@
             this.guna2Button1.TabIndex = 15;
             this.guna2Button1.Text = "Done";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::LearNAV.Properties.Resources.basic_settings;
+            this.pictureBox2.Location = new System.Drawing.Point(927, 54);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(27, 27);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // search_bar
+            // 
+            this.search_bar.Animated = true;
+            this.search_bar.AutoRoundedCorners = true;
+            this.search_bar.BackColor = System.Drawing.Color.Transparent;
+            this.search_bar.BorderRadius = 17;
+            this.search_bar.BorderThickness = 2;
+            this.search_bar.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.search_bar.DefaultText = "";
+            this.search_bar.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.search_bar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.search_bar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.search_bar.DisabledState.Parent = this.search_bar;
+            this.search_bar.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.search_bar.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.search_bar.FocusedState.Parent = this.search_bar;
+            this.search_bar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_bar.HoverState.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.search_bar.HoverState.Parent = this.search_bar;
+            this.search_bar.IconLeft = global::LearNAV.Properties.Resources.basic_magnifier;
+            this.search_bar.IconLeftOffset = new System.Drawing.Point(10, 0);
+            this.search_bar.Location = new System.Drawing.Point(12, 45);
+            this.search_bar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.search_bar.Name = "search_bar";
+            this.search_bar.PasswordChar = '\0';
+            this.search_bar.PlaceholderText = "";
+            this.search_bar.SelectedText = "";
+            this.search_bar.ShadowDecoration.BorderRadius = 15;
+            this.search_bar.ShadowDecoration.Color = System.Drawing.SystemColors.ControlDarkDark;
+            this.search_bar.ShadowDecoration.Depth = 100;
+            this.search_bar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.search_bar.ShadowDecoration.Parent = this.search_bar;
+            this.search_bar.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(5, 5, 5, 100);
+            this.search_bar.Size = new System.Drawing.Size(909, 36);
+            this.search_bar.TabIndex = 1;
+            // 
             // Shelf
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1252, 568);
+            this.ClientSize = new System.Drawing.Size(967, 568);
             this.Controls.Add(this.pnl_methods);
             this.Controls.Add(this.btn_new_folder);
             this.Controls.Add(this.item_list);
@@ -421,8 +420,8 @@
             this.Text = "Libr-e SHELF";
             this.pnl_above.ResumeLayout(false);
             this.pnl_above.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnl_methods.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

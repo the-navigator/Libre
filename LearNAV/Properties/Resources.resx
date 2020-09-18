@@ -154,6 +154,9 @@
   <data name="loading_screen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\loading_screen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="basic_magnifier_plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\basic_magnifier_plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="basic_magnifier" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\basic_magnifier.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -193,6 +196,9 @@
   <data name="open-book1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\open-book1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="final_test" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\final_test.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="question" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\question.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -229,7 +235,7 @@
   <data name="Log-In" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Log-In.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="basic_magnifier_plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\basic_magnifier_plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="final_test1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\final_test1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
