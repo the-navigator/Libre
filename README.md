@@ -2,7 +2,7 @@
 ***Check LearNAV Engine Repository for extended functions as the projects are linked to each other***
 
 [LearNAV Engine Repository](https://github.com/the-navigator/LearNAV-Engine-MySQL)
-## Basic Information
+## Basic Information 📚
 ### Flexible Digital Library
 Libre's system consists of the following:
 1. **Digital Learning Resource Library**
@@ -13,7 +13,7 @@ Libre's system consists of the following:
 - Libre's Search System allows the user to quickly search for the embedded resources in the database
 ### **SHELF**
 An implementation of Libre where the resources come from the users.  Both acts as learning  resource manager and **Tag-Based Directory System** for User's Resources. 
-## System and Usages
+## System and Usages 💻
 ###  Surface Informations
 - **Design**
 	- Libre consists of a very simple interface design for the interface following both Google's [*Material Design*](https://material.io) and Mozillas' [*Photon Design*](https://design.firefox.com).
@@ -35,8 +35,8 @@ An implementation of Libre where the resources come from the users.  Both acts a
 	2. Gelion Typeface
 	3. Berlin Round
 	4. Seoge UI
-## Programming Libre
-This section is intended to those who wish to conribute to the project. Befor you do, kindly check the Code of Conduct and License attached to this repository. *Cheers!*
+## Programming Libre 📃
+This section is intended to those who wish to conribute to the project. Befor you do, kindly check [this out](https://github.com/the-navigator/Libre/blob/master/CONTRIBUTING.md) and License attached to this repository. *Cheers!*🎉
 ### Development
 - Language Used: **C#**, .NET 4.7.2
 - IDE : **Visual Studio**
