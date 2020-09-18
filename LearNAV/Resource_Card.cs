@@ -80,12 +80,7 @@ namespace LearNAV
              catch (Exception e)
              {
                  DialogResult result = MessageBox.Show("Resource not found, extract resources from a file?", "Error!", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
-                 if (result == DialogResult.OK)
-                 {
-
-                     Extract frm = new Extract();
-                     frm.Show();
-                 }
+               
              }
          }
 

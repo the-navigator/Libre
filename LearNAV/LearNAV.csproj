@@ -72,9 +72,6 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\..\Jureen's Files\The Navigator\The Navigator\The Navigator\bin\Debug\Bunifu_UI_v1.5.3.dll</HintPath>
-    </Reference>
     <Reference Include="DotNetZip">
       <HintPath>..\packages\DotNetZip.1.13.8\lib\net40\DotNetZip.dll</HintPath>
     </Reference>
@@ -129,41 +126,11 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Extract.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Extract.Designer.cs">
-      <DependentUpon>Extract.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Home_Window.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Home_Window.Designer.cs">
-      <DependentUpon>Home_Window.cs</DependentUpon>
-    </Compile>
-    <Compile Include="loading_screen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="loading_screen.Designer.cs">
-      <DependentUpon>loading_screen.cs</DependentUpon>
-    </Compile>
     <Compile Include="Loding_Screen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Loding_Screen.Designer.cs">
       <DependentUpon>Loding_Screen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Log-In Window.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Log-In Window.Designer.cs">
-      <DependentUpon>Log-In Window.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PDF Viewer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PDF Viewer.Designer.cs">
-      <DependentUpon>PDF Viewer.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -172,12 +139,6 @@
     </Compile>
     <Compile Include="Resource_Card.Designer.cs">
       <DependentUpon>Resource_Card.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Resource_Extract_Tool.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Resource_Extract_Tool.Designer.cs">
-      <DependentUpon>Resource_Extract_Tool.cs</DependentUpon>
     </Compile>
     <Compile Include="Libre_SHELF.cs">
       <SubType>Form</SubType>
@@ -200,23 +161,8 @@
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Extract.resx">
-      <DependentUpon>Extract.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Home_Window.resx">
-      <DependentUpon>Home_Window.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="loading_screen.resx">
-      <DependentUpon>loading_screen.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Loding_Screen.resx">
       <DependentUpon>Loding_Screen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Log-In Window.resx">
-      <DependentUpon>Log-In Window.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PDF Viewer.resx">
-      <DependentUpon>PDF Viewer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -230,9 +176,6 @@
     </Compile>
     <EmbeddedResource Include="Resource_Card.resx">
       <DependentUpon>Resource_Card.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resource_Extract_Tool.resx">
-      <DependentUpon>Resource_Extract_Tool.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Libre_SHELF.resx">
       <DependentUpon>Libre_SHELF.cs</DependentUpon>
