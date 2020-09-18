@@ -22,9 +22,10 @@ An implementation of Libre where the resources come from the users.  Both acts a
 	
 ***Screenshots***
 
-**Main Window**
-![Main Window/Dashboard](https://i.postimg.cc/J41fm4sk/main.png)**Advanced Search**
-![Advanced Search](https://i.postimg.cc/dV3gkHmQ/advance-search.png)**SHELF**
+
+
+![Main Window/Dashboard](https://i.postimg.cc/J41fm4sk/main.png)
+![Advanced Search](https://i.postimg.cc/dV3gkHmQ/advance-search.png)
 ![Libre SHELF(Under Development)](https://i.postimg.cc/5NnZtdzk/shelf.png)***SHELF is currently under development***
 
 - **Fonts**
