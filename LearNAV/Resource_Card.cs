@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LearNAV
+namespace Libre
 {
     public partial class Resource_Card : UserControl
     {

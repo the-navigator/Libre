@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using LearNAV_Engine;
 using MetroFramework;
 
-namespace LearNAV
+namespace Libre
 {
     public partial class Advance_Search : Form
     {

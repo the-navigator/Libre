@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using LearNAV_Engine;
 using Guna;
 
-namespace LearNAV
+namespace Libre
 {
     public partial class Dashboard : Form
     {
@@ -195,6 +195,13 @@ namespace LearNAV
             }
         }
 
+        private void name_search(string search_text)
+        {
+
+            DataTable n_dt = new DataTable();
+            
+
+        }
 
                 
         
@@ -303,6 +310,15 @@ namespace LearNAV
             Shelf s = new Shelf();
             s.Show();
         }
+
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+
+
+        }
+
+       
 
       
 

@@ -1,4 +1,4 @@
-﻿namespace LearNAV
+﻿namespace Libre
 {
     partial class Advance_Search
     {
@@ -355,7 +355,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::LearNAV.Properties.Resources.SPLASH1;
+            this.pictureBox2.Image = global::Libre.Properties.Resources.SPLASH1;
             this.pictureBox2.Location = new System.Drawing.Point(401, 43);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(241, 64);
