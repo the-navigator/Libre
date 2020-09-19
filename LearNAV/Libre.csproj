@@ -7,8 +7,8 @@
     <ProjectGuid>{CA277AA2-1BED-4ECE-B828-2FC943FCF812}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LearNAV</RootNamespace>
-    <AssemblyName>LearNAV</AssemblyName>
+    <RootNamespace>Libre</RootNamespace>
+    <AssemblyName>Libre</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
@@ -140,12 +140,6 @@
     <Compile Include="Resource_Card.Designer.cs">
       <DependentUpon>Resource_Card.cs</DependentUpon>
     </Compile>
-    <Compile Include="Libre_SHELF.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Libre_SHELF.Designer.cs">
-      <DependentUpon>Libre_SHELF.cs</DependentUpon>
-    </Compile>
     <Compile Include="Shelf.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,9 +170,6 @@
     </Compile>
     <EmbeddedResource Include="Resource_Card.resx">
       <DependentUpon>Resource_Card.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Libre_SHELF.resx">
-      <DependentUpon>Libre_SHELF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Shelf.resx">
       <DependentUpon>Shelf.cs</DependentUpon>
@@ -232,6 +223,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo-ico.ico" />
+    <None Include="Resources\search-outline.png" />
+    <None Include="Resources\folder-add-outline.png" />
+    <None Include="Resources\settings-outline.png" />
+    <None Include="Resources\settings2.png" />
+    <None Include="Resources\star-outline.png" />
+    <None Include="Resources\file-add-outline.png" />
+    <None Include="Resources\file-add.png" />
+    <None Include="Resources\hash.png" />
     <None Include="Resources\final_test1.png" />
     <None Include="Resources\final_test.png" />
     <None Include="Resources\basic_magnifier_plus.png" />

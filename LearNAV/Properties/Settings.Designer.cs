@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LearNAV.Properties {
+namespace Libre.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

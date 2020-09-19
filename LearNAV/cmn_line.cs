@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using LearNAV_Engine;
-namespace LearNAV
+namespace Libre
 {
     public partial class cmn_line : Form
     {

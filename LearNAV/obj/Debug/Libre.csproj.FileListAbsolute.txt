@@ -1,0 +1,23 @@
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\obj\Debug\Libre.Advance_Search.resources
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\obj\Debug\Libre.cmn_line.resources
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\obj\Debug\Libre.Dashboard.resources
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\obj\Debug\Libre.Loding_Screen.resources
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\obj\Debug\Libre.Properties.Resources.resources
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\obj\Debug\Libre.Resource_Card.resources
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\obj\Debug\Libre.Shelf.resources
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\obj\Debug\Libre.csproj.GenerateResource.Cache
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\bin\Debug\Libre.exe.config
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\bin\Debug\Libre.exe
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\bin\Debug\Libre.pdb
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\bin\Debug\DotNetZip.dll
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\bin\Debug\Guna.UI2.dll
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\bin\Debug\LearNAV Engine.dll
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\bin\Debug\MaterialSkin.dll
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\bin\Debug\MetroFramework.dll
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\bin\Debug\System.Data.SQLite.dll
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\bin\Debug\DotNetZip.pdb
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\bin\Debug\DotNetZip.xml
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\bin\Debug\LearNAV Engine.pdb
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\bin\Debug\System.Data.SQLite.xml
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\obj\Debug\Libre.exe
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\obj\Debug\Libre.pdb

@@ -1,4 +1,4 @@
-﻿namespace LearNAV
+﻿namespace Libre
 {
     partial class cmn_line
     {
