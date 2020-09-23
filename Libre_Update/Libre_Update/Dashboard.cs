@@ -21,5 +21,18 @@ namespace Libre_Update
         {
             shadow_form.SetShadowForm(this);
         }
+
+        private void btn_visit_directory_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start(Environment.CurrentDirectory + "\\Resource Files");
+
+            }
+            catch(Exception v)
+            {
+                MessageBox.Show(v.Message);
+            }
+        }
     }
 }

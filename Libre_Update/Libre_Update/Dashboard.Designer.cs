@@ -310,6 +310,7 @@
             this.btn_visit_directory.Size = new System.Drawing.Size(166, 31);
             this.btn_visit_directory.TabIndex = 10;
             this.btn_visit_directory.Text = "Visit Directory";
+            this.btn_visit_directory.Click += new System.EventHandler(this.btn_visit_directory_Click);
             // 
             // btn_github
             // 

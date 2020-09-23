@@ -8,6 +8,8 @@ namespace Libre_Update
 {
     static class Program
     {
+        public static string connection_string;
+        
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
