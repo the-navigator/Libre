@@ -34,9 +34,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.elipse_ad_search = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.frm_drag = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.btn_search_box = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btn_search = new Guna.UI2.WinForms.Guna2Button();
+            this.gradient_design = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.resource_list = new System.Windows.Forms.ListView();
             this.ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.r_name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -46,16 +46,17 @@
             this.shadow_form = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_subj_viewer = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_issue = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_update_libre = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_subj_browser = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_visit_directory = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_github = new Guna.UI2.WinForms.Guna2Button();
             this.btn_grade_level_viewer = new Guna.UI2.WinForms.Guna2Button();
             this.btn_advance_search = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btn_access = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.guna2CircleButton2 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.pnl_header.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // elipse_main
@@ -65,9 +66,11 @@
             // 
             // pnl_header
             // 
+            this.pnl_header.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnl_header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.pnl_header.Controls.Add(this.guna2CircleButton2);
+            this.pnl_header.Controls.Add(this.guna2CircleButton1);
             this.pnl_header.Controls.Add(this.label1);
-            this.pnl_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_header.Location = new System.Drawing.Point(0, 0);
             this.pnl_header.Name = "pnl_header";
             this.pnl_header.Size = new System.Drawing.Size(957, 32);
@@ -92,68 +95,71 @@
             // 
             this.frm_drag.TargetControl = this;
             // 
-            // guna2TextBox1
+            // btn_search_box
             // 
-            this.guna2TextBox1.BorderRadius = 15;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "wow";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(41, 40);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.SelectionStart = 3;
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(755, 29);
-            this.guna2TextBox1.TabIndex = 2;
+            this.btn_search_box.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_search_box.BorderRadius = 15;
+            this.btn_search_box.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.btn_search_box.DefaultText = "wow";
+            this.btn_search_box.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.btn_search_box.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.btn_search_box.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.btn_search_box.DisabledState.Parent = this.btn_search_box;
+            this.btn_search_box.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.btn_search_box.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btn_search_box.FocusedState.Parent = this.btn_search_box;
+            this.btn_search_box.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btn_search_box.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
+            this.btn_search_box.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btn_search_box.HoverState.Parent = this.btn_search_box;
+            this.btn_search_box.Location = new System.Drawing.Point(13, 40);
+            this.btn_search_box.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_search_box.Name = "btn_search_box";
+            this.btn_search_box.PasswordChar = '\0';
+            this.btn_search_box.PlaceholderText = "";
+            this.btn_search_box.SelectedText = "";
+            this.btn_search_box.SelectionStart = 3;
+            this.btn_search_box.ShadowDecoration.Parent = this.btn_search_box;
+            this.btn_search_box.Size = new System.Drawing.Size(783, 29);
+            this.btn_search_box.TabIndex = 2;
             // 
-            // guna2Button1
+            // btn_search
             // 
-            this.guna2Button1.Animated = true;
-            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.guna2Button1.BorderRadius = 12;
-            this.guna2Button1.BorderThickness = 2;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
-            this.guna2Button1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(86)))));
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(86)))));
-            this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(803, 38);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(142, 31);
-            this.guna2Button1.TabIndex = 3;
-            this.guna2Button1.Text = "Search";
+            this.btn_search.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_search.Animated = true;
+            this.btn_search.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.btn_search.BorderRadius = 12;
+            this.btn_search.BorderThickness = 2;
+            this.btn_search.CheckedState.Parent = this.btn_search;
+            this.btn_search.CustomImages.Parent = this.btn_search;
+            this.btn_search.FillColor = System.Drawing.Color.White;
+            this.btn_search.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btn_search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
+            this.btn_search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(86)))));
+            this.btn_search.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(86)))));
+            this.btn_search.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_search.HoverState.Parent = this.btn_search;
+            this.btn_search.Location = new System.Drawing.Point(803, 38);
+            this.btn_search.Name = "btn_search";
+            this.btn_search.ShadowDecoration.Parent = this.btn_search;
+            this.btn_search.Size = new System.Drawing.Size(142, 31);
+            this.btn_search.TabIndex = 3;
+            this.btn_search.Text = "Search";
             // 
-            // guna2GradientPanel1
+            // gradient_design
             // 
-            this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(148)))), ((int)(((byte)(234)))));
-            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(78)))), ((int)(((byte)(162)))));
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 507);
-            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(957, 13);
-            this.guna2GradientPanel1.TabIndex = 8;
+            this.gradient_design.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.gradient_design.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(148)))), ((int)(((byte)(234)))));
+            this.gradient_design.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(78)))), ((int)(((byte)(162)))));
+            this.gradient_design.Location = new System.Drawing.Point(0, 507);
+            this.gradient_design.Name = "gradient_design";
+            this.gradient_design.ShadowDecoration.Parent = this.gradient_design;
+            this.gradient_design.Size = new System.Drawing.Size(957, 13);
+            this.gradient_design.TabIndex = 8;
             // 
             // resource_list
             // 
+            this.resource_list.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.resource_list.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.resource_list.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.ID,
@@ -201,132 +207,138 @@
             // 
             this.guna2DragControl2.TargetControl = this.resource_list;
             // 
-            // guna2Button5
+            // btn_issue
             // 
-            this.guna2Button5.Animated = true;
-            this.guna2Button5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.guna2Button5.BorderRadius = 12;
-            this.guna2Button5.BorderThickness = 2;
-            this.guna2Button5.CheckedState.Parent = this.guna2Button5;
-            this.guna2Button5.CustomImages.Parent = this.guna2Button5;
-            this.guna2Button5.FillColor = System.Drawing.Color.White;
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2Button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
-            this.guna2Button5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(132)))), ((int)(((byte)(132)))));
-            this.guna2Button5.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(132)))), ((int)(((byte)(132)))));
-            this.guna2Button5.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.HoverState.Image = global::Libre_Update.Properties.Resources.box_important_96px1;
-            this.guna2Button5.HoverState.Parent = this.guna2Button5;
-            this.guna2Button5.Image = global::Libre_Update.Properties.Resources.box_important_96px;
-            this.guna2Button5.Location = new System.Drawing.Point(719, 77);
-            this.guna2Button5.MaximumSize = new System.Drawing.Size(166, 48);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
-            this.guna2Button5.Size = new System.Drawing.Size(34, 31);
-            this.guna2Button5.TabIndex = 13;
+            this.btn_issue.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_issue.Animated = true;
+            this.btn_issue.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.btn_issue.BorderRadius = 12;
+            this.btn_issue.BorderThickness = 2;
+            this.btn_issue.CheckedState.Parent = this.btn_issue;
+            this.btn_issue.CustomImages.Parent = this.btn_issue;
+            this.btn_issue.FillColor = System.Drawing.Color.White;
+            this.btn_issue.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btn_issue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
+            this.btn_issue.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(132)))), ((int)(((byte)(132)))));
+            this.btn_issue.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(132)))), ((int)(((byte)(132)))));
+            this.btn_issue.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_issue.HoverState.Image = global::Libre_Update.Properties.Resources.box_important_96px1;
+            this.btn_issue.HoverState.Parent = this.btn_issue;
+            this.btn_issue.Image = global::Libre_Update.Properties.Resources.box_important_96px;
+            this.btn_issue.Location = new System.Drawing.Point(719, 77);
+            this.btn_issue.MaximumSize = new System.Drawing.Size(166, 48);
+            this.btn_issue.Name = "btn_issue";
+            this.btn_issue.ShadowDecoration.Parent = this.btn_issue;
+            this.btn_issue.Size = new System.Drawing.Size(34, 31);
+            this.btn_issue.TabIndex = 13;
             // 
-            // guna2Button4
+            // btn_update_libre
             // 
-            this.guna2Button4.Animated = true;
-            this.guna2Button4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.guna2Button4.BorderRadius = 12;
-            this.guna2Button4.BorderThickness = 2;
-            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
-            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
-            this.guna2Button4.FillColor = System.Drawing.Color.White;
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2Button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
-            this.guna2Button4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(93)))), ((int)(((byte)(125)))));
-            this.guna2Button4.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(93)))), ((int)(((byte)(125)))));
-            this.guna2Button4.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.HoverState.Image = global::Libre_Update.Properties.Resources.download_from_ftp_96px;
-            this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Image = global::Libre_Update.Properties.Resources.download_from_ftp_96px1;
-            this.guna2Button4.Location = new System.Drawing.Point(528, 75);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(185, 31);
-            this.guna2Button4.TabIndex = 12;
-            this.guna2Button4.Text = "Update Libre";
+            this.btn_update_libre.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_update_libre.Animated = true;
+            this.btn_update_libre.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.btn_update_libre.BorderRadius = 12;
+            this.btn_update_libre.BorderThickness = 2;
+            this.btn_update_libre.CheckedState.Parent = this.btn_update_libre;
+            this.btn_update_libre.CustomImages.Parent = this.btn_update_libre;
+            this.btn_update_libre.FillColor = System.Drawing.Color.White;
+            this.btn_update_libre.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btn_update_libre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
+            this.btn_update_libre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(93)))), ((int)(((byte)(125)))));
+            this.btn_update_libre.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(93)))), ((int)(((byte)(125)))));
+            this.btn_update_libre.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_update_libre.HoverState.Image = global::Libre_Update.Properties.Resources.download_from_ftp_96px;
+            this.btn_update_libre.HoverState.Parent = this.btn_update_libre;
+            this.btn_update_libre.Image = global::Libre_Update.Properties.Resources.download_from_ftp_96px1;
+            this.btn_update_libre.Location = new System.Drawing.Point(528, 75);
+            this.btn_update_libre.Name = "btn_update_libre";
+            this.btn_update_libre.ShadowDecoration.Parent = this.btn_update_libre;
+            this.btn_update_libre.Size = new System.Drawing.Size(185, 31);
+            this.btn_update_libre.TabIndex = 12;
+            this.btn_update_libre.Text = "Update Libre";
             // 
-            // guna2Button3
+            // btn_subj_browser
             // 
-            this.guna2Button3.Animated = true;
-            this.guna2Button3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.guna2Button3.BorderRadius = 12;
-            this.guna2Button3.BorderThickness = 2;
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.FillColor = System.Drawing.Color.White;
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
-            this.guna2Button3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(209)))), ((int)(((byte)(144)))));
-            this.guna2Button3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(209)))), ((int)(((byte)(144)))));
-            this.guna2Button3.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.Image = global::Libre_Update.Properties.Resources.grid_2_24px1;
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Image = global::Libre_Update.Properties.Resources.grid_2_24px;
-            this.guna2Button3.Location = new System.Drawing.Point(356, 77);
-            this.guna2Button3.MaximumSize = new System.Drawing.Size(166, 48);
-            this.guna2Button3.MinimumSize = new System.Drawing.Size(166, 31);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(166, 31);
-            this.guna2Button3.TabIndex = 11;
-            this.guna2Button3.Text = "Subject Browser";
+            this.btn_subj_browser.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_subj_browser.Animated = true;
+            this.btn_subj_browser.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.btn_subj_browser.BorderRadius = 12;
+            this.btn_subj_browser.BorderThickness = 2;
+            this.btn_subj_browser.CheckedState.Parent = this.btn_subj_browser;
+            this.btn_subj_browser.CustomImages.Parent = this.btn_subj_browser;
+            this.btn_subj_browser.FillColor = System.Drawing.Color.White;
+            this.btn_subj_browser.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btn_subj_browser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
+            this.btn_subj_browser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(172)))), ((int)(((byte)(133)))));
+            this.btn_subj_browser.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(172)))), ((int)(((byte)(133)))));
+            this.btn_subj_browser.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_subj_browser.HoverState.Image = global::Libre_Update.Properties.Resources.grid_2_24px1;
+            this.btn_subj_browser.HoverState.Parent = this.btn_subj_browser;
+            this.btn_subj_browser.Image = global::Libre_Update.Properties.Resources.grid_2_24px;
+            this.btn_subj_browser.Location = new System.Drawing.Point(356, 77);
+            this.btn_subj_browser.MaximumSize = new System.Drawing.Size(166, 48);
+            this.btn_subj_browser.MinimumSize = new System.Drawing.Size(166, 31);
+            this.btn_subj_browser.Name = "btn_subj_browser";
+            this.btn_subj_browser.ShadowDecoration.Parent = this.btn_subj_browser;
+            this.btn_subj_browser.Size = new System.Drawing.Size(166, 31);
+            this.btn_subj_browser.TabIndex = 11;
+            this.btn_subj_browser.Text = "Subject Browser";
             // 
-            // guna2Button2
+            // btn_visit_directory
             // 
-            this.guna2Button2.Animated = true;
-            this.guna2Button2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.guna2Button2.BorderRadius = 12;
-            this.guna2Button2.BorderThickness = 2;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.White;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
-            this.guna2Button2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(194)))), ((int)(((byte)(196)))));
-            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(194)))), ((int)(((byte)(196)))));
-            this.guna2Button2.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Image = global::Libre_Update.Properties.Resources.search_folder_96px1;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Image = global::Libre_Update.Properties.Resources.search_folder_96px;
-            this.guna2Button2.Location = new System.Drawing.Point(12, 77);
-            this.guna2Button2.MaximumSize = new System.Drawing.Size(166, 48);
-            this.guna2Button2.MinimumSize = new System.Drawing.Size(166, 31);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(166, 31);
-            this.guna2Button2.TabIndex = 10;
-            this.guna2Button2.Text = "Visit Directory";
+            this.btn_visit_directory.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_visit_directory.Animated = true;
+            this.btn_visit_directory.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.btn_visit_directory.BorderRadius = 12;
+            this.btn_visit_directory.BorderThickness = 2;
+            this.btn_visit_directory.CheckedState.Parent = this.btn_visit_directory;
+            this.btn_visit_directory.CustomImages.Parent = this.btn_visit_directory;
+            this.btn_visit_directory.FillColor = System.Drawing.Color.White;
+            this.btn_visit_directory.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btn_visit_directory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
+            this.btn_visit_directory.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(194)))), ((int)(((byte)(196)))));
+            this.btn_visit_directory.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(194)))), ((int)(((byte)(196)))));
+            this.btn_visit_directory.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_visit_directory.HoverState.Image = global::Libre_Update.Properties.Resources.search_folder_96px1;
+            this.btn_visit_directory.HoverState.Parent = this.btn_visit_directory;
+            this.btn_visit_directory.Image = global::Libre_Update.Properties.Resources.search_folder_96px;
+            this.btn_visit_directory.Location = new System.Drawing.Point(12, 77);
+            this.btn_visit_directory.MaximumSize = new System.Drawing.Size(166, 48);
+            this.btn_visit_directory.MinimumSize = new System.Drawing.Size(166, 31);
+            this.btn_visit_directory.Name = "btn_visit_directory";
+            this.btn_visit_directory.ShadowDecoration.Parent = this.btn_visit_directory;
+            this.btn_visit_directory.Size = new System.Drawing.Size(166, 31);
+            this.btn_visit_directory.TabIndex = 10;
+            this.btn_visit_directory.Text = "Visit Directory";
             // 
-            // btn_subj_viewer
+            // btn_github
             // 
-            this.btn_subj_viewer.Animated = true;
-            this.btn_subj_viewer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.btn_subj_viewer.BorderRadius = 12;
-            this.btn_subj_viewer.BorderThickness = 2;
-            this.btn_subj_viewer.CheckedState.Parent = this.btn_subj_viewer;
-            this.btn_subj_viewer.CustomImages.Parent = this.btn_subj_viewer;
-            this.btn_subj_viewer.FillColor = System.Drawing.Color.White;
-            this.btn_subj_viewer.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btn_subj_viewer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
-            this.btn_subj_viewer.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(108)))), ((int)(((byte)(203)))));
-            this.btn_subj_viewer.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(108)))), ((int)(((byte)(203)))));
-            this.btn_subj_viewer.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_subj_viewer.HoverState.Image = global::Libre_Update.Properties.Resources.github_96px1;
-            this.btn_subj_viewer.HoverState.Parent = this.btn_subj_viewer;
-            this.btn_subj_viewer.Image = global::Libre_Update.Properties.Resources.github_96px2;
-            this.btn_subj_viewer.Location = new System.Drawing.Point(759, 77);
-            this.btn_subj_viewer.MaximumSize = new System.Drawing.Size(166, 48);
-            this.btn_subj_viewer.Name = "btn_subj_viewer";
-            this.btn_subj_viewer.ShadowDecoration.Parent = this.btn_subj_viewer;
-            this.btn_subj_viewer.Size = new System.Drawing.Size(34, 31);
-            this.btn_subj_viewer.TabIndex = 7;
+            this.btn_github.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_github.Animated = true;
+            this.btn_github.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.btn_github.BorderRadius = 12;
+            this.btn_github.BorderThickness = 2;
+            this.btn_github.CheckedState.Parent = this.btn_github;
+            this.btn_github.CustomImages.Parent = this.btn_github;
+            this.btn_github.FillColor = System.Drawing.Color.White;
+            this.btn_github.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btn_github.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
+            this.btn_github.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(108)))), ((int)(((byte)(203)))));
+            this.btn_github.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(108)))), ((int)(((byte)(203)))));
+            this.btn_github.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_github.HoverState.Image = global::Libre_Update.Properties.Resources.github_96px1;
+            this.btn_github.HoverState.Parent = this.btn_github;
+            this.btn_github.Image = global::Libre_Update.Properties.Resources.github_96px2;
+            this.btn_github.Location = new System.Drawing.Point(759, 77);
+            this.btn_github.MaximumSize = new System.Drawing.Size(166, 48);
+            this.btn_github.Name = "btn_github";
+            this.btn_github.ShadowDecoration.Parent = this.btn_github;
+            this.btn_github.Size = new System.Drawing.Size(34, 31);
+            this.btn_github.TabIndex = 7;
             // 
             // btn_grade_level_viewer
             // 
+            this.btn_grade_level_viewer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_grade_level_viewer.Animated = true;
             this.btn_grade_level_viewer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.btn_grade_level_viewer.BorderRadius = 12;
@@ -336,8 +348,8 @@
             this.btn_grade_level_viewer.FillColor = System.Drawing.Color.White;
             this.btn_grade_level_viewer.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btn_grade_level_viewer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
-            this.btn_grade_level_viewer.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(154)))), ((int)(((byte)(182)))));
-            this.btn_grade_level_viewer.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(154)))), ((int)(((byte)(182)))));
+            this.btn_grade_level_viewer.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(177)))));
+            this.btn_grade_level_viewer.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(177)))));
             this.btn_grade_level_viewer.HoverState.ForeColor = System.Drawing.Color.White;
             this.btn_grade_level_viewer.HoverState.Image = global::Libre_Update.Properties.Resources.physics_book_96px1;
             this.btn_grade_level_viewer.HoverState.Parent = this.btn_grade_level_viewer;
@@ -353,6 +365,7 @@
             // 
             // btn_advance_search
             // 
+            this.btn_advance_search.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_advance_search.Animated = true;
             this.btn_advance_search.BackColor = System.Drawing.Color.Transparent;
             this.btn_advance_search.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
@@ -378,16 +391,64 @@
             this.btn_advance_search.TabIndex = 5;
             this.btn_advance_search.Text = "Advanced Search";
             // 
-            // guna2PictureBox1
+            // btn_access
             // 
-            this.guna2PictureBox1.BackgroundImage = global::Libre_Update.Properties.Resources.bookmark;
-            this.guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 38);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(22, 31);
-            this.guna2PictureBox1.TabIndex = 4;
-            this.guna2PictureBox1.TabStop = false;
+            this.btn_access.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_access.Animated = true;
+            this.btn_access.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(192)))), ((int)(((byte)(149)))));
+            this.btn_access.BorderRadius = 4;
+            this.btn_access.BorderThickness = 2;
+            this.btn_access.CheckedState.Parent = this.btn_access;
+            this.btn_access.CustomImages.Parent = this.btn_access;
+            this.btn_access.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(192)))), ((int)(((byte)(149)))));
+            this.btn_access.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_access.ForeColor = System.Drawing.Color.White;
+            this.btn_access.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(151)))), ((int)(((byte)(138)))));
+            this.btn_access.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(151)))), ((int)(((byte)(138)))));
+            this.btn_access.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_access.HoverState.Parent = this.btn_access;
+            this.btn_access.Location = new System.Drawing.Point(779, 453);
+            this.btn_access.Name = "btn_access";
+            this.btn_access.ShadowDecoration.Parent = this.btn_access;
+            this.btn_access.Size = new System.Drawing.Size(152, 37);
+            this.btn_access.TabIndex = 14;
+            this.btn_access.Text = "Access";
+            // 
+            // guna2CircleButton1
+            // 
+            this.guna2CircleButton1.CheckedState.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.CustomImages.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.FillColor = System.Drawing.Color.White;
+            this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleButton1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
+            this.guna2CircleButton1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
+            this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.Location = new System.Drawing.Point(930, 10);
+            this.guna2CircleButton1.Name = "guna2CircleButton1";
+            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.Size = new System.Drawing.Size(15, 15);
+            this.guna2CircleButton1.TabIndex = 15;
+            this.guna2CircleButton1.Text = "guna2CircleButton1";
+            // 
+            // guna2CircleButton2
+            // 
+            this.guna2CircleButton2.CheckedState.Parent = this.guna2CircleButton2;
+            this.guna2CircleButton2.CustomImages.Parent = this.guna2CircleButton2;
+            this.guna2CircleButton2.FillColor = System.Drawing.Color.White;
+            this.guna2CircleButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2CircleButton2.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleButton2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(202)))), ((int)(((byte)(196)))));
+            this.guna2CircleButton2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(202)))), ((int)(((byte)(196)))));
+            this.guna2CircleButton2.HoverState.Parent = this.guna2CircleButton2;
+            this.guna2CircleButton2.Location = new System.Drawing.Point(909, 10);
+            this.guna2CircleButton2.Name = "guna2CircleButton2";
+            this.guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleButton2.ShadowDecoration.Parent = this.guna2CircleButton2;
+            this.guna2CircleButton2.Size = new System.Drawing.Size(15, 15);
+            this.guna2CircleButton2.TabIndex = 16;
+            this.guna2CircleButton2.Text = "guna2CircleButton2";
             // 
             // Dashboard
             // 
@@ -395,18 +456,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(957, 520);
-            this.Controls.Add(this.guna2Button5);
-            this.Controls.Add(this.guna2Button4);
-            this.Controls.Add(this.guna2Button3);
-            this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.resource_list);
-            this.Controls.Add(this.guna2GradientPanel1);
-            this.Controls.Add(this.btn_subj_viewer);
+            this.Controls.Add(this.btn_access);
+            this.Controls.Add(this.btn_issue);
+            this.Controls.Add(this.btn_update_libre);
+            this.Controls.Add(this.btn_subj_browser);
+            this.Controls.Add(this.btn_visit_directory);
+            this.Controls.Add(this.gradient_design);
+            this.Controls.Add(this.btn_github);
             this.Controls.Add(this.btn_grade_level_viewer);
             this.Controls.Add(this.btn_advance_search);
-            this.Controls.Add(this.guna2PictureBox1);
-            this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.btn_search);
+            this.Controls.Add(this.btn_search_box);
             this.Controls.Add(this.pnl_header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dashboard";
@@ -415,7 +476,6 @@
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.pnl_header.ResumeLayout(false);
             this.pnl_header.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -426,27 +486,29 @@
         private System.Windows.Forms.Panel pnl_header;
         private Guna.UI2.WinForms.Guna2Elipse elipse_ad_search;
         private Guna.UI2.WinForms.Guna2DragControl frm_drag;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2Button btn_search;
+        private Guna.UI2.WinForms.Guna2TextBox btn_search_box;
         private Guna.UI2.WinForms.Guna2Button btn_grade_level_viewer;
         private Guna.UI2.WinForms.Guna2Button btn_advance_search;
-        private Guna.UI2.WinForms.Guna2Button btn_subj_viewer;
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
+        private Guna.UI2.WinForms.Guna2Button btn_github;
+        private Guna.UI2.WinForms.Guna2GradientPanel gradient_design;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListView resource_list;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btn_visit_directory;
         private Guna.UI2.WinForms.Guna2Elipse elipse_lv;
         private System.Windows.Forms.ColumnHeader ID;
         private System.Windows.Forms.ColumnHeader r_name;
         private System.Windows.Forms.ColumnHeader r_level;
         private System.Windows.Forms.ColumnHeader r_subj;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private Guna.UI2.WinForms.Guna2Button btn_subj_browser;
+        private Guna.UI2.WinForms.Guna2Button btn_issue;
+        private Guna.UI2.WinForms.Guna2Button btn_update_libre;
         private Guna.UI2.WinForms.Guna2ShadowForm shadow_form;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
+        private Guna.UI2.WinForms.Guna2Button btn_access;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton2;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
     }
 }
 
