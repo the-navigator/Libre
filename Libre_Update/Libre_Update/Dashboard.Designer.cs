@@ -43,6 +43,9 @@
             this.r_level = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.r_subj = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.elipse_lv = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.shadow_form = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
@@ -51,9 +54,6 @@
             this.btn_grade_level_viewer = new Guna.UI2.WinForms.Guna2Button();
             this.btn_advance_search = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.shadow_form = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
-            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.pnl_header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -193,6 +193,14 @@
             // 
             this.elipse_lv.BorderRadius = 1;
             // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.TargetControl = this.pnl_header;
+            // 
+            // guna2DragControl2
+            // 
+            this.guna2DragControl2.TargetControl = this.resource_list;
+            // 
             // guna2Button5
             // 
             this.guna2Button5.Animated = true;
@@ -228,17 +236,18 @@
             this.guna2Button4.FillColor = System.Drawing.Color.White;
             this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guna2Button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
-            this.guna2Button4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(86)))));
-            this.guna2Button4.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(86)))));
+            this.guna2Button4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(93)))), ((int)(((byte)(125)))));
+            this.guna2Button4.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(93)))), ((int)(((byte)(125)))));
             this.guna2Button4.HoverState.ForeColor = System.Drawing.Color.White;
+            this.guna2Button4.HoverState.Image = global::Libre_Update.Properties.Resources.download_from_ftp_96px;
             this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Image = global::Libre_Update.Properties.Resources.physics_book_96px;
+            this.guna2Button4.Image = global::Libre_Update.Properties.Resources.download_from_ftp_96px1;
             this.guna2Button4.Location = new System.Drawing.Point(528, 75);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
             this.guna2Button4.Size = new System.Drawing.Size(185, 31);
             this.guna2Button4.TabIndex = 12;
-            this.guna2Button4.Text = "Subject Browser";
+            this.guna2Button4.Text = "Update Libre";
             // 
             // guna2Button3
             // 
@@ -251,11 +260,12 @@
             this.guna2Button3.FillColor = System.Drawing.Color.White;
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guna2Button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
-            this.guna2Button3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(238)))), ((int)(((byte)(104)))));
-            this.guna2Button3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(238)))), ((int)(((byte)(104)))));
+            this.guna2Button3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(209)))), ((int)(((byte)(144)))));
+            this.guna2Button3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(209)))), ((int)(((byte)(144)))));
             this.guna2Button3.HoverState.ForeColor = System.Drawing.Color.White;
+            this.guna2Button3.HoverState.Image = global::Libre_Update.Properties.Resources.grid_2_24px1;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Image = global::Libre_Update.Properties.Resources.physics_book_96px;
+            this.guna2Button3.Image = global::Libre_Update.Properties.Resources.grid_2_24px;
             this.guna2Button3.Location = new System.Drawing.Point(356, 77);
             this.guna2Button3.MaximumSize = new System.Drawing.Size(166, 48);
             this.guna2Button3.MinimumSize = new System.Drawing.Size(166, 31);
@@ -353,8 +363,8 @@
             this.btn_advance_search.FillColor = System.Drawing.Color.White;
             this.btn_advance_search.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btn_advance_search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
-            this.btn_advance_search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(194)))), ((int)(((byte)(196)))));
-            this.btn_advance_search.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(194)))), ((int)(((byte)(196)))));
+            this.btn_advance_search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(86)))));
+            this.btn_advance_search.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(86)))));
             this.btn_advance_search.HoverState.ForeColor = System.Drawing.Color.White;
             this.btn_advance_search.HoverState.Image = global::Libre_Update.Properties.Resources.search_96px1;
             this.btn_advance_search.HoverState.Parent = this.btn_advance_search;
@@ -378,14 +388,6 @@
             this.guna2PictureBox1.Size = new System.Drawing.Size(22, 31);
             this.guna2PictureBox1.TabIndex = 4;
             this.guna2PictureBox1.TabStop = false;
-            // 
-            // guna2DragControl1
-            // 
-            this.guna2DragControl1.TargetControl = this.pnl_header;
-            // 
-            // guna2DragControl2
-            // 
-            this.guna2DragControl2.TargetControl = this.resource_list;
             // 
             // Dashboard
             // 
