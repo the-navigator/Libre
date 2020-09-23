@@ -326,8 +326,8 @@
             this.btn_grade_level_viewer.FillColor = System.Drawing.Color.White;
             this.btn_grade_level_viewer.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btn_grade_level_viewer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
-            this.btn_grade_level_viewer.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(194)))), ((int)(((byte)(196)))));
-            this.btn_grade_level_viewer.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(194)))), ((int)(((byte)(196)))));
+            this.btn_grade_level_viewer.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(154)))), ((int)(((byte)(182)))));
+            this.btn_grade_level_viewer.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(154)))), ((int)(((byte)(182)))));
             this.btn_grade_level_viewer.HoverState.ForeColor = System.Drawing.Color.White;
             this.btn_grade_level_viewer.HoverState.Image = global::Libre_Update.Properties.Resources.physics_book_96px1;
             this.btn_grade_level_viewer.HoverState.Parent = this.btn_grade_level_viewer;
