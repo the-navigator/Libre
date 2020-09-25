@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SQLite;
 
 namespace Libre_Update
 {
@@ -29,7 +30,9 @@ namespace Libre_Update
   
              try
               {
-                  Libre_Engine.CheckDatabase.InitialLoad();
+                 // Libre_Engine.CheckDatabase l = new Libre_Engine.CheckDatabase();
+                 //LearNAV_Engine.DatabaseConnection d = new LearNAV_Engine.DatabaseConnection();
+                 Libre_Engine.CheckDatabase.InitialLoad();
 
 
                   if (Libre_Engine.CheckDatabase.dt.Rows.Count > 0)
@@ -40,7 +43,7 @@ namespace Libre_Update
                           DataRow dr = Libre_Engine.CheckDatabase.dt.Rows[i];
                           ListViewItem fetched_data = new ListViewItem(dr["ID"].ToString());
                           fetched_data.SubItems.Add(dr["ResourceN"].ToString());
-                          fetched_data.SubItems.Add(dr["ResourceLoc"].ToString());
+                          fetched_data.SubItems.Add(dr["GradeLevel"].ToString());
 
                           resource_list.Items.Add(fetched_data);
 
@@ -69,6 +72,11 @@ namespace Libre_Update
             {
                 MessageBox.Show(v.Message);
             }
+        }
+
+        private void btn_github_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://github.com/the-navigator/libre");
         }
     }
 }

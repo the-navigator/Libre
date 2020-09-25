@@ -66,14 +66,14 @@
             // 
             // pnl_header
             // 
-            this.pnl_header.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnl_header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
             this.pnl_header.Controls.Add(this.guna2CircleButton2);
             this.pnl_header.Controls.Add(this.guna2CircleButton1);
             this.pnl_header.Controls.Add(this.label1);
+            this.pnl_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_header.Location = new System.Drawing.Point(0, 0);
             this.pnl_header.Name = "pnl_header";
-            this.pnl_header.Size = new System.Drawing.Size(957, 32);
+            this.pnl_header.Size = new System.Drawing.Size(934, 32);
             this.pnl_header.TabIndex = 0;
             // 
             // guna2CircleButton2
@@ -86,7 +86,7 @@
             this.guna2CircleButton2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(202)))), ((int)(((byte)(196)))));
             this.guna2CircleButton2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(202)))), ((int)(((byte)(196)))));
             this.guna2CircleButton2.HoverState.Parent = this.guna2CircleButton2;
-            this.guna2CircleButton2.Location = new System.Drawing.Point(909, 10);
+            this.guna2CircleButton2.Location = new System.Drawing.Point(884, 6);
             this.guna2CircleButton2.Name = "guna2CircleButton2";
             this.guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton2.ShadowDecoration.Parent = this.guna2CircleButton2;
@@ -104,7 +104,7 @@
             this.guna2CircleButton1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
             this.guna2CircleButton1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
             this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.Location = new System.Drawing.Point(930, 10);
+            this.guna2CircleButton1.Location = new System.Drawing.Point(905, 6);
             this.guna2CircleButton1.Name = "guna2CircleButton1";
             this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
@@ -148,7 +148,7 @@
             this.btn_search_box.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
             this.btn_search_box.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btn_search_box.HoverState.Parent = this.btn_search_box;
-            this.btn_search_box.Location = new System.Drawing.Point(13, 40);
+            this.btn_search_box.Location = new System.Drawing.Point(12, 48);
             this.btn_search_box.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_search_box.Name = "btn_search_box";
             this.btn_search_box.PasswordChar = '\0';
@@ -156,7 +156,7 @@
             this.btn_search_box.SelectedText = "";
             this.btn_search_box.SelectionStart = 3;
             this.btn_search_box.ShadowDecoration.Parent = this.btn_search_box;
-            this.btn_search_box.Size = new System.Drawing.Size(783, 29);
+            this.btn_search_box.Size = new System.Drawing.Size(769, 29);
             this.btn_search_box.TabIndex = 2;
             // 
             // btn_search
@@ -175,10 +175,10 @@
             this.btn_search.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(170)))), ((int)(((byte)(86)))));
             this.btn_search.HoverState.ForeColor = System.Drawing.Color.White;
             this.btn_search.HoverState.Parent = this.btn_search;
-            this.btn_search.Location = new System.Drawing.Point(803, 38);
+            this.btn_search.Location = new System.Drawing.Point(788, 48);
             this.btn_search.Name = "btn_search";
             this.btn_search.ShadowDecoration.Parent = this.btn_search;
-            this.btn_search.Size = new System.Drawing.Size(142, 31);
+            this.btn_search.Size = new System.Drawing.Size(132, 31);
             this.btn_search.TabIndex = 3;
             this.btn_search.Text = "Search";
             // 
@@ -187,10 +187,10 @@
             this.gradient_design.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.gradient_design.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(148)))), ((int)(((byte)(234)))));
             this.gradient_design.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(78)))), ((int)(((byte)(162)))));
-            this.gradient_design.Location = new System.Drawing.Point(0, 507);
+            this.gradient_design.Location = new System.Drawing.Point(0, 552);
             this.gradient_design.Name = "gradient_design";
             this.gradient_design.ShadowDecoration.Parent = this.gradient_design;
-            this.gradient_design.Size = new System.Drawing.Size(957, 13);
+            this.gradient_design.Size = new System.Drawing.Size(934, 13);
             this.gradient_design.TabIndex = 8;
             // 
             // resource_list
@@ -202,11 +202,12 @@
             this.r_name,
             this.r_level,
             this.r_subj});
-            this.resource_list.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resource_list.Location = new System.Drawing.Point(12, 114);
+            this.resource_list.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resource_list.FullRowSelect = true;
+            this.resource_list.Location = new System.Drawing.Point(12, 127);
             this.resource_list.MultiSelect = false;
             this.resource_list.Name = "resource_list";
-            this.resource_list.Size = new System.Drawing.Size(919, 342);
+            this.resource_list.Size = new System.Drawing.Size(908, 365);
             this.resource_list.TabIndex = 9;
             this.resource_list.UseCompatibleStateImageBehavior = false;
             this.resource_list.View = System.Windows.Forms.View.Details;
@@ -214,7 +215,7 @@
             // ID
             // 
             this.ID.Text = "ID";
-            this.ID.Width = 99;
+            this.ID.Width = 76;
             // 
             // r_name
             // 
@@ -261,7 +262,7 @@
             this.btn_issue.HoverState.Image = global::Libre_Update.Properties.Resources.box_important_96px1;
             this.btn_issue.HoverState.Parent = this.btn_issue;
             this.btn_issue.Image = global::Libre_Update.Properties.Resources.box_important_96px;
-            this.btn_issue.Location = new System.Drawing.Point(719, 77);
+            this.btn_issue.Location = new System.Drawing.Point(709, 85);
             this.btn_issue.MaximumSize = new System.Drawing.Size(166, 48);
             this.btn_issue.Name = "btn_issue";
             this.btn_issue.ShadowDecoration.Parent = this.btn_issue;
@@ -286,10 +287,10 @@
             this.btn_update_libre.HoverState.Image = global::Libre_Update.Properties.Resources.download_from_ftp_96px;
             this.btn_update_libre.HoverState.Parent = this.btn_update_libre;
             this.btn_update_libre.Image = global::Libre_Update.Properties.Resources.download_from_ftp_96px1;
-            this.btn_update_libre.Location = new System.Drawing.Point(528, 75);
+            this.btn_update_libre.Location = new System.Drawing.Point(528, 85);
             this.btn_update_libre.Name = "btn_update_libre";
             this.btn_update_libre.ShadowDecoration.Parent = this.btn_update_libre;
-            this.btn_update_libre.Size = new System.Drawing.Size(185, 31);
+            this.btn_update_libre.Size = new System.Drawing.Size(177, 31);
             this.btn_update_libre.TabIndex = 12;
             this.btn_update_libre.Text = "Update Libre";
             // 
@@ -311,9 +312,8 @@
             this.btn_subj_browser.HoverState.Image = global::Libre_Update.Properties.Resources.grid_2_24px1;
             this.btn_subj_browser.HoverState.Parent = this.btn_subj_browser;
             this.btn_subj_browser.Image = global::Libre_Update.Properties.Resources.grid_2_24px;
-            this.btn_subj_browser.Location = new System.Drawing.Point(356, 77);
+            this.btn_subj_browser.Location = new System.Drawing.Point(356, 85);
             this.btn_subj_browser.MaximumSize = new System.Drawing.Size(166, 48);
-            this.btn_subj_browser.MinimumSize = new System.Drawing.Size(166, 31);
             this.btn_subj_browser.Name = "btn_subj_browser";
             this.btn_subj_browser.ShadowDecoration.Parent = this.btn_subj_browser;
             this.btn_subj_browser.Size = new System.Drawing.Size(166, 31);
@@ -338,9 +338,8 @@
             this.btn_visit_directory.HoverState.Image = global::Libre_Update.Properties.Resources.search_folder_96px1;
             this.btn_visit_directory.HoverState.Parent = this.btn_visit_directory;
             this.btn_visit_directory.Image = global::Libre_Update.Properties.Resources.search_folder_96px;
-            this.btn_visit_directory.Location = new System.Drawing.Point(12, 77);
+            this.btn_visit_directory.Location = new System.Drawing.Point(12, 85);
             this.btn_visit_directory.MaximumSize = new System.Drawing.Size(166, 48);
-            this.btn_visit_directory.MinimumSize = new System.Drawing.Size(166, 31);
             this.btn_visit_directory.Name = "btn_visit_directory";
             this.btn_visit_directory.ShadowDecoration.Parent = this.btn_visit_directory;
             this.btn_visit_directory.Size = new System.Drawing.Size(166, 31);
@@ -366,12 +365,13 @@
             this.btn_github.HoverState.Image = global::Libre_Update.Properties.Resources.github_96px1;
             this.btn_github.HoverState.Parent = this.btn_github;
             this.btn_github.Image = global::Libre_Update.Properties.Resources.github_96px2;
-            this.btn_github.Location = new System.Drawing.Point(759, 77);
+            this.btn_github.Location = new System.Drawing.Point(746, 85);
             this.btn_github.MaximumSize = new System.Drawing.Size(166, 48);
             this.btn_github.Name = "btn_github";
             this.btn_github.ShadowDecoration.Parent = this.btn_github;
             this.btn_github.Size = new System.Drawing.Size(34, 31);
             this.btn_github.TabIndex = 7;
+            this.btn_github.Click += new System.EventHandler(this.btn_github_Click);
             // 
             // btn_grade_level_viewer
             // 
@@ -391,9 +391,8 @@
             this.btn_grade_level_viewer.HoverState.Image = global::Libre_Update.Properties.Resources.physics_book_96px1;
             this.btn_grade_level_viewer.HoverState.Parent = this.btn_grade_level_viewer;
             this.btn_grade_level_viewer.Image = global::Libre_Update.Properties.Resources.physics_book_96px;
-            this.btn_grade_level_viewer.Location = new System.Drawing.Point(184, 75);
+            this.btn_grade_level_viewer.Location = new System.Drawing.Point(184, 85);
             this.btn_grade_level_viewer.MaximumSize = new System.Drawing.Size(166, 48);
-            this.btn_grade_level_viewer.MinimumSize = new System.Drawing.Size(166, 31);
             this.btn_grade_level_viewer.Name = "btn_grade_level_viewer";
             this.btn_grade_level_viewer.ShadowDecoration.Parent = this.btn_grade_level_viewer;
             this.btn_grade_level_viewer.Size = new System.Drawing.Size(166, 31);
@@ -419,12 +418,12 @@
             this.btn_advance_search.HoverState.Image = global::Libre_Update.Properties.Resources.search_96px1;
             this.btn_advance_search.HoverState.Parent = this.btn_advance_search;
             this.btn_advance_search.Image = global::Libre_Update.Properties.Resources.search_96px2;
-            this.btn_advance_search.Location = new System.Drawing.Point(799, 75);
+            this.btn_advance_search.Location = new System.Drawing.Point(784, 85);
             this.btn_advance_search.Name = "btn_advance_search";
             this.btn_advance_search.ShadowDecoration.BorderRadius = 4;
             this.btn_advance_search.ShadowDecoration.Depth = 15;
             this.btn_advance_search.ShadowDecoration.Parent = this.btn_advance_search;
-            this.btn_advance_search.Size = new System.Drawing.Size(146, 31);
+            this.btn_advance_search.Size = new System.Drawing.Size(136, 31);
             this.btn_advance_search.TabIndex = 5;
             this.btn_advance_search.Text = "Advanced Search";
             // 
@@ -444,7 +443,7 @@
             this.btn_access.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(151)))), ((int)(((byte)(138)))));
             this.btn_access.HoverState.ForeColor = System.Drawing.Color.White;
             this.btn_access.HoverState.Parent = this.btn_access;
-            this.btn_access.Location = new System.Drawing.Point(779, 453);
+            this.btn_access.Location = new System.Drawing.Point(768, 487);
             this.btn_access.Name = "btn_access";
             this.btn_access.ShadowDecoration.Parent = this.btn_access;
             this.btn_access.Size = new System.Drawing.Size(152, 37);
@@ -456,7 +455,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(957, 520);
+            this.ClientSize = new System.Drawing.Size(934, 565);
             this.Controls.Add(this.resource_list);
             this.Controls.Add(this.btn_access);
             this.Controls.Add(this.btn_issue);

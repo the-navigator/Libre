@@ -11,14 +11,14 @@ namespace Libre_Update.Libre_Engine
 {
     public class CheckDatabase
     {
-    	public static string Table {get; set;}
-    	public static string Query {get; set;}
-    	public static string[] Columns {get; set;}
-		static string default_path = Environment.CurrentDirectory;
-		public static string connection_string = "DataSource=" + default_path + "\\LEARNAV.DB;Version=3";
+    	//public static string Table {get; set;}
+    	//public static string Query {get; set;}
+    	//public static string[] Columns {get; set;}
+		//static string default_path = Environment.CurrentDirectory;
+		static string connection_string = "DataSource=" + Environment.CurrentDirectory + "\\LEARNAV.DB;Version=3";
 		static SQLiteConnection db_cn = new SQLiteConnection(connection_string);
-		static SQLiteDataAdapter da = new SQLiteDataAdapter();
-		public static DataTable dt = new DataTable();
+		 static SQLiteDataAdapter da = new SQLiteDataAdapter();
+		 public static DataTable dt = new DataTable();
 
 		//commands
 		static string _initial_load = "SELECT * FROM ResourceDB";
@@ -33,7 +33,7 @@ namespace Libre_Update.Libre_Engine
 			try 
 			{
 			db_cn.Open();
-			da = new SQLiteDataAdapter(_initial_load, db_cn);
+            da = new SQLiteDataAdapter("SELECT * FROM ResourceDB", db_cn);
 			da.Fill(dt);
 			db_cn.Close();
 			} catch (System.Exception e) 
