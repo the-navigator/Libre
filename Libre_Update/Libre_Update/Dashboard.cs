@@ -48,8 +48,7 @@ namespace Libre_Update
                   }
                   else
 
-                      MessageBox.Show("No data were imported!" + " Counted Data: " + Libre_Engine.CheckDatabase.rowcount.ToString(),
-                          "Database Connection Error!", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                      MessageBox.Show("Error");
 
 
               }

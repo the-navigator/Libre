@@ -15,7 +15,7 @@ namespace Libre_Update.Libre_Engine
     	public static string Query {get; set;}
     	public static string[] Columns {get; set;}
 		static string default_path = Environment.CurrentDirectory;
-		public const string connection_string = "DataSource=" + default_path + "\\LEARNAV.DB;Version=3";
+		public static string connection_string = "DataSource=" + default_path + "\\LEARNAV.DB;Version=3";
 		static SQLiteConnection db_cn = new SQLiteConnection(connection_string);
 		static SQLiteDataAdapter da = new SQLiteDataAdapter();
 		public static DataTable dt = new DataTable();
@@ -51,7 +51,7 @@ namespace Libre_Update.Libre_Engine
 
     }
 
-    public static class Search_Name
+    public class Search_Name
     {
         public static string _search_query
         {
@@ -59,12 +59,7 @@ namespace Libre_Update.Libre_Engine
             set;
         }
 
-        public Search_Name(string search_query)
-        {
-            _search_query = search_query;
-
-
-        }
+      
 
 
 }
