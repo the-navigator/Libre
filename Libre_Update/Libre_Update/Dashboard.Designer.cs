@@ -56,7 +56,6 @@
             this.btn_grade_level_viewer = new Guna.UI2.WinForms.Guna2Button();
             this.btn_advance_search = new Guna.UI2.WinForms.Guna2Button();
             this.btn_access = new Guna.UI2.WinForms.Guna2Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.pnl_header.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -452,23 +451,12 @@
             this.btn_access.TabIndex = 14;
             this.btn_access.Text = "Access";
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(401, 480);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
-            this.checkBox1.TabIndex = 15;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(957, 520);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.resource_list);
             this.Controls.Add(this.btn_access);
             this.Controls.Add(this.btn_issue);
@@ -490,7 +478,6 @@
             this.pnl_header.ResumeLayout(false);
             this.pnl_header.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -523,7 +510,6 @@
         private Guna.UI2.WinForms.Guna2Button btn_access;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton2;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
-        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

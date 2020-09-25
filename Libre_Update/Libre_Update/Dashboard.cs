@@ -26,29 +26,29 @@ namespace Libre_Update
 
         private void load_data()
         {
-            Libre_Engine.CheckDatabase.InitialLoad();
+  
              try
               {
-                  LoadData.ShowFiltered();
+                  Libre_Engine.CheckDatabase.InitialLoad();
 
 
-                  if (LoadData.dt.Rows.Count > 0)
+                  if (Libre_Engine.CheckDatabase.dt.Rows.Count > 0)
                   {
-                      for (int i = 0; i < LoadData.dt.Rows.Count; i++)
+                      for (int i = 0; i < Libre_Engine.CheckDatabase.dt.Rows.Count; i++)
                       {
 
-                          DataRow dr = LoadData.dt.Rows[i];
+                          DataRow dr = Libre_Engine.CheckDatabase.dt.Rows[i];
                           ListViewItem fetched_data = new ListViewItem(dr["ID"].ToString());
                           fetched_data.SubItems.Add(dr["ResourceN"].ToString());
                           fetched_data.SubItems.Add(dr["ResourceLoc"].ToString());
 
-                          search_results.Items.Add(fetched_data);
+                          resource_list.Items.Add(fetched_data);
 
                       }
                   }
                   else
 
-                      MessageBox.Show("No data were imported!" + " Counted Data: " + LoadData.rowcount.ToString(),
+                      MessageBox.Show("No data were imported!" + " Counted Data: " + Libre_Engine.CheckDatabase.rowcount.ToString(),
                           "Database Connection Error!", MessageBoxButtons.OK, MessageBoxIcon.Stop);
 
 

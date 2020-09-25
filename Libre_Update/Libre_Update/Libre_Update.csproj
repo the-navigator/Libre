@@ -65,6 +65,7 @@
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Engine\Operations.cs" />
+    <Compile Include="Libre Engine\CheckDatabase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup\CheckForResources.cs" />
