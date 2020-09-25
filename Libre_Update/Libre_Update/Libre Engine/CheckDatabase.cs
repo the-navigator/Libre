@@ -51,12 +51,25 @@ namespace Libre_Update.Libre_Engine
 
     }
 
-    public class Search_Name
+    public static class Advance_Search
     {
+    	static string connection_string = "DataSource=" + Environment.CurrentDirectory + "\\LEARNAV.DB;Version=3";
+		static SQLiteConnection db_cn = new SQLiteConnection(connection_string);
+		 static SQLiteDataAdapter da = new SQLiteDataAdapter();
+		 public static DataTable dt = new DataTable();
+         public static DataTable dt_filtered_name = new DataTable();
         public static string _search_query
         {
             get;
             set;
+        }
+
+        public static void search_name(string _search_name)
+        {
+        	db_cn.Open();
+        	da = new SQLiteDataAdapter("SELECT * FROM ResourceDB WHERE ResourceN Like '%" + _search_name + "%'" , db_cn);
+        	da.Fill(dt);
+        	
         }
 
       

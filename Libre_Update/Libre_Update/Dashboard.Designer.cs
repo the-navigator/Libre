@@ -36,7 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.elipse_ad_search = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.frm_drag = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.btn_search_box = new Guna.UI2.WinForms.Guna2TextBox();
+            this.search_box = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_search = new Guna.UI2.WinForms.Guna2Button();
             this.gradient_design = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.resource_list = new System.Windows.Forms.ListView();
@@ -131,33 +131,33 @@
             // 
             this.frm_drag.TargetControl = this;
             // 
-            // btn_search_box
+            // search_box
             // 
-            this.btn_search_box.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_search_box.BorderRadius = 15;
-            this.btn_search_box.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.btn_search_box.DefaultText = "wow";
-            this.btn_search_box.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.btn_search_box.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.btn_search_box.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.btn_search_box.DisabledState.Parent = this.btn_search_box;
-            this.btn_search_box.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.btn_search_box.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btn_search_box.FocusedState.Parent = this.btn_search_box;
-            this.btn_search_box.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btn_search_box.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
-            this.btn_search_box.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btn_search_box.HoverState.Parent = this.btn_search_box;
-            this.btn_search_box.Location = new System.Drawing.Point(12, 48);
-            this.btn_search_box.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn_search_box.Name = "btn_search_box";
-            this.btn_search_box.PasswordChar = '\0';
-            this.btn_search_box.PlaceholderText = "";
-            this.btn_search_box.SelectedText = "";
-            this.btn_search_box.SelectionStart = 3;
-            this.btn_search_box.ShadowDecoration.Parent = this.btn_search_box;
-            this.btn_search_box.Size = new System.Drawing.Size(769, 29);
-            this.btn_search_box.TabIndex = 2;
+            this.search_box.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.search_box.BorderRadius = 15;
+            this.search_box.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.search_box.DefaultText = "wow";
+            this.search_box.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.search_box.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.search_box.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.search_box.DisabledState.Parent = this.search_box;
+            this.search_box.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.search_box.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.search_box.FocusedState.Parent = this.search_box;
+            this.search_box.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.search_box.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
+            this.search_box.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.search_box.HoverState.Parent = this.search_box;
+            this.search_box.Location = new System.Drawing.Point(12, 48);
+            this.search_box.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.search_box.Name = "search_box";
+            this.search_box.PasswordChar = '\0';
+            this.search_box.PlaceholderText = "";
+            this.search_box.SelectedText = "";
+            this.search_box.SelectionStart = 3;
+            this.search_box.ShadowDecoration.Parent = this.search_box;
+            this.search_box.Size = new System.Drawing.Size(769, 29);
+            this.search_box.TabIndex = 2;
             // 
             // btn_search
             // 
@@ -181,6 +181,7 @@
             this.btn_search.Size = new System.Drawing.Size(132, 31);
             this.btn_search.TabIndex = 3;
             this.btn_search.Text = "Search";
+            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
             // 
             // gradient_design
             // 
@@ -467,7 +468,7 @@
             this.Controls.Add(this.btn_grade_level_viewer);
             this.Controls.Add(this.btn_advance_search);
             this.Controls.Add(this.btn_search);
-            this.Controls.Add(this.btn_search_box);
+            this.Controls.Add(this.search_box);
             this.Controls.Add(this.pnl_header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dashboard";
@@ -487,7 +488,7 @@
         private Guna.UI2.WinForms.Guna2Elipse elipse_ad_search;
         private Guna.UI2.WinForms.Guna2DragControl frm_drag;
         private Guna.UI2.WinForms.Guna2Button btn_search;
-        private Guna.UI2.WinForms.Guna2TextBox btn_search_box;
+        private Guna.UI2.WinForms.Guna2TextBox search_box;
         private Guna.UI2.WinForms.Guna2Button btn_grade_level_viewer;
         private Guna.UI2.WinForms.Guna2Button btn_advance_search;
         private Guna.UI2.WinForms.Guna2Button btn_github;
