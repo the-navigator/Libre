@@ -18,6 +18,7 @@ namespace Libre_Update.Libre_Engine
 
         /// <summary>
         /// **Connection String**
+        /// Also Includes all needed connection properties
         /// </summary>
 		static string connectionString = "DataSource=" + Environment.CurrentDirectory + "\\LEARNAV.DB;Version=3";
 		static SQLiteConnection dbCn = new SQLiteConnection(connectionString);
@@ -27,16 +28,32 @@ namespace Libre_Update.Libre_Engine
         /// DataTable Variable to hold Data for each operation
         /// </summary>
 		public static DataTable dt = new DataTable();
-        
+
+        /// <summary>
+        /// Table Names Added for Parameters to avoid SQL Injection
+        /// </summary>
+
+        static string[] columnNames = ["PKID", "ID", "ResourceN", "ResourceLoc", "Author", "GradeLevel", "w_tags", "code_accss", "File"];
 
 		//commands
         
 		static string _initiaLoad = "SELECT * FROM ResourceDB";
 
         //holder
+        /// <summary>
+        /// A universal string from this class that can be used as a message for exceptions
+        /// </summary>
         public static string message;
-
-		
+        public static string _connectionStatus;
+		public string connectionStatus()
+        {
+            if (dbCn.State == ConnectionState.Open)
+            {
+                return _connectionStatus = "Active";
+            } else {
+                return _connectionStatus = "Inactive";
+            }
+        }
         /// <summary>
         /// Initializes Loading of Data into Dashboard's ListView
         /// </summary>
@@ -45,7 +62,9 @@ namespace Libre_Update.Libre_Engine
 			try 
 			{
 			dbCn.Open();
-            da = new SQLiteDataAdapter("SELECT * FROM ResourceDB", dbCn);
+            string selectQuery = ($"SELECT * FROM {tableNames[0]}")
+            SQLiteCommand sqlInitialLoadCommand = new SQLiteCommand()
+            da = new SQLiteDataAdapter($"SELECT * FROM ResourceDB", dbCn);
 			da.Fill(dt);
 			dbCn.Close();
 			} catch (System.Exception e) 
