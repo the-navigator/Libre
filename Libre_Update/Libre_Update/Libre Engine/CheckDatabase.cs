@@ -15,61 +15,85 @@ namespace Libre_Update.Libre_Engine
     	//public static string Query {get; set;}
     	//public static string[] Columns {get; set;}
 		//static string default_path = Environment.CurrentDirectory;
-		static string connection_string = "DataSource=" + Environment.CurrentDirectory + "\\LEARNAV.DB;Version=3";
-		static SQLiteConnection db_cn = new SQLiteConnection(connection_string);
-		 static SQLiteDataAdapter da = new SQLiteDataAdapter();
-		 public static DataTable dt = new DataTable();
+
+        /// <summary>
+        /// **Connection String**
+        /// </summary>
+		static string connectionString = "DataSource=" + Environment.CurrentDirectory + "\\LEARNAV.DB;Version=3";
+		static SQLiteConnection dbCn = new SQLiteConnection(connectionString);
+		static SQLiteDataAdapter da = new SQLiteDataAdapter();
+
+        /// <summary>
+        /// DataTable Variable to hold Data for each operation
+        /// </summary>
+		public static DataTable dt = new DataTable();
+        
 
 		//commands
-		static string _initial_load = "SELECT * FROM ResourceDB";
+        
+		static string _initiaLoad = "SELECT * FROM ResourceDB";
 
         //holder
         public static string message;
 
 		
-
+        /// <summary>
+        /// Initializes Loading of Data into Dashboard's ListView
+        /// </summary>
 		public static void InitialLoad()
 		{
 			try 
 			{
-			db_cn.Open();
-            da = new SQLiteDataAdapter("SELECT * FROM ResourceDB", db_cn);
+			dbCn.Open();
+            da = new SQLiteDataAdapter("SELECT * FROM ResourceDB", dbCn);
 			da.Fill(dt);
-			db_cn.Close();
+			dbCn.Close();
 			} catch (System.Exception e) 
-			{
-                
+			{  
 					message = ("Error With Initial Load! \n Message: " + e.Message);
-
 			}
-				
-
 		}
         }
 
 		
 
     }
-
-    public static class Advance_Search
+    /// <summary>
+    /// Advanced Search Class
+    /// Responsible for Advance Filters and operations to be executed for specific results.
+    /// 
+    /// </summary>
+    public static class AdvanceSearch
     {
     	static string connection_string = "DataSource=" + Environment.CurrentDirectory + "\\LEARNAV.DB;Version=3";
 		static SQLiteConnection db_cn = new SQLiteConnection(connection_string);
-		 static SQLiteDataAdapter da = new SQLiteDataAdapter();
-		 public static DataTable dt = new DataTable();
-         public static DataTable dt_filtered_name = new DataTable();
-        public static string _search_query
+		static SQLiteDataAdapter da = new SQLiteDataAdapter();
+		public static DataTable dt = new DataTable();
+        /// <summary>
+        /// Experimental DataTable for showing Filtered Name
+        /// </summary>
+        public static DataTable dtFilteredName = new DataTable();
+        public static string _searchQuery
         {
             get;
             set;
         }
 
-        public static void search_name(string _search_name)
+        /// <summary>
+        /// Search the Database for specific Name
+        /// <param name="_search_name" String Varialbe to place search string
+        /// </summary>
+        public static void searchName(string _searchName)
         {
+
+        
         	db_cn.Open();
-        	da = new SQLiteDataAdapter("SELECT * FROM ResourceDB WHERE ResourceN Like '%" + _search_name + "%'" , db_cn);
+        	da = new SQLiteDataAdapter("SELECT * FROM ResourceDB" , db_cn);
+            dt.Clear();
         	da.Fill(dt);
-        	
+        	DataView dv = new DataView(dt);
+           // dv.RowFilter = string.Format ("ID LIKE")
+
         }
 
       

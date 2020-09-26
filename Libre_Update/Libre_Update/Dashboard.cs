@@ -21,11 +21,11 @@ namespace Libre_Update
         private void Dashboard_Load(object sender, EventArgs e)
         {
             shadow_form.SetShadowForm(this);
-            load_data();
+            LoadData();
 
         }
 
-        private void load_data()
+        private void LoadData()
         {
   
              try
@@ -91,14 +91,15 @@ namespace Libre_Update
                 // Libre_Engine.CheckDatabase l = new Libre_Engine.CheckDatabase();
                 //LearNAV_Engine.DatabaseConnection d = new LearNAV_Engine.DatabaseConnection();
              
-                Advance_Search.search_name(var_st);
+                AdvanceSearch.searchName(var_st);
+            
 
-                if (Advance_Search.dt.Rows.Count > 0)
+                if (AdvanceSearch.dt.Rows.Count > 0)
                 {
-                    for (int i = 0; i < Advance_Search.dt.Rows.Count; i++)
+                    for (int i = 0; i < AdvanceSearch.dt.Rows.Count; i++)
                     {
 
-                        DataRow dr = Advance_Search.dt.Rows[i];
+                        DataRow dr = AdvanceSearch.dt.Rows[i];
                         ListViewItem fetched_data = new ListViewItem(dr["ID"].ToString());
                         fetched_data.SubItems.Add(dr["ResourceN"].ToString());
                         fetched_data.SubItems.Add(dr["GradeLevel"].ToString());
