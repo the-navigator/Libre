@@ -86,9 +86,10 @@ namespace Libre_Update.Libre_Engine
         public static void searchName(string _searchName)
         {
 
+            
         
-        	db_cn.Open();
-        	da = new SQLiteDataAdapter("SELECT * FROM ResourceDB" , db_cn);
+        	dbCn.Open();
+        	da = new SQLiteDataAdapter("SELECT * FROM ResourceDB WHERE ResourceN like '%" + _searchName + "%'" , db_cn);
             dt.Clear();
         	da.Fill(dt);
         	DataView dv = new DataView(dt);
