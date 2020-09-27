@@ -59,7 +59,6 @@ namespace Libre_Update.Libre_Engine
         /// </summary>
 		public static void InitialLoad()
 		{
-            private string connectionStringSelect = Libre_Engine.VarHold.connectionString;
             private string tableName = Libre_Engine.VarHold.tableNames[0];
 
             string selectQuery = ($"SELECT * FROM {tableName}");
@@ -77,14 +76,14 @@ namespace Libre_Update.Libre_Engine
 		}
         }	
     }
-    /// <summary>
-    /// Advanced Search Class
-    /// Responsible for Advance Filters and operations to be executed for specific results.
-    /// 
-    /// </summary>
+        /// <summary>
+        /// Advanced Search Class
+        /// Responsible for Advance Filters and operations to be executed for specific results.
+        /// 
+        /// </summary>
+    //lol
     public static class AdvanceSearch
     {
-    	
         private string connectionString = Libre_Engine.VarHold.connectionString;
 		static SQLiteConnection db_cn = new SQLiteConnection(connectionString);
 		static SQLiteDataAdapter da = new SQLiteDataAdapter();
@@ -98,14 +97,12 @@ namespace Libre_Update.Libre_Engine
             get;
             set;
         }
-
         /// <summary>
         /// Search the Database for specific Name
         /// <param name="_search_name" String Varialbe to place search string
         /// </summary>
         public static void searchName(string _searchName)
         {
-            private string connectionStringSearchName = Libre_Engine.VarHold.connectionString;
             private string tableNameSearchName = Libre_Engine.VarHold.tableNames[0];
 
             string selectQuery = ($"SELECT * FROM {tableNameSearchName}");
@@ -123,8 +120,4 @@ namespace Libre_Update.Libre_Engine
             } 
 
         }
-
-      
-
-
 }
