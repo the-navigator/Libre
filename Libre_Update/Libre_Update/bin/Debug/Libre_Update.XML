@@ -21,9 +21,10 @@
             the contents of this method with the code editor.
             </summary>
         </member>
-        <member name="F:Libre_Update.Libre_Engine.CheckDatabase.connectionString">
+        <member name="F:Libre_Update.Libre_Engine.CheckDatabase.cnString">
             <summary>
             **Connection String**
+            Also Includes all needed connection properties
             </summary>
         </member>
         <member name="F:Libre_Update.Libre_Engine.CheckDatabase.dt">
@@ -31,18 +32,49 @@
             DataTable Variable to hold Data for each operation
             </summary>
         </member>
-        <member name="M:Libre_Update.Libre_Engine.CheckDatabase.InitialLoad">
+        <member name="F:Libre_Update.Libre_Engine.CheckDatabase._initiaLoad">
             <summary>
-            Initializes Loading of Data into Dashboard's ListView
+            Table Names Added for Parameters to avoid SQL Injection
             </summary>
         </member>
-        <member name="T:AdvanceSearch">
+        <member name="F:Libre_Update.Libre_Engine.CheckDatabase.message">
             <summary>
-            <b>Advanced Search</b>
-            
+            A universal string from this class that can be used as a message for exceptions
             </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:AdvanceSearch.searchName(System.String)" -->
+        <member name="F:Libre_Update.Libre_Engine.AdvanceSearch.dtFilteredName">
+            <summary>
+            Experimental DataTable for showing Filtered Name
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Libre_Update.Libre_Engine.AdvanceSearch.searchName(System.String)" -->
+        <member name="T:Libre_Update.Libre_Engine.FileObject">
+            <summary>
+            A File Object
+            Stores Data of a FileObject to be stored in a JSON file
+            Data includes Name, Extension, DateCreated and Special Characters
+            </summary>
+        </member>
+        <member name="M:Libre_Update.Libre_Engine.FileObject.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Constructor Used to define this Object
+            </summary>
+        </member>
+        <member name="F:Libre_Update.Libre_Engine.VarHold.connectionString">
+            <summary>
+            Connection String, Primary Connection String
+            </summary>
+        </member>
+        <member name="F:Libre_Update.Libre_Engine.VarHold.columnNames">
+            <summary>
+            Column Names in the curretn database
+            </summary>
+        </member>
+        <member name="F:Libre_Update.Libre_Engine.VarHold.tableNames">
+            <summary>
+            Table Names
+            </summary>
+        </member>
         <member name="M:Libre_Update.Program.Main">
             <summary>
             The main entry point for the application.

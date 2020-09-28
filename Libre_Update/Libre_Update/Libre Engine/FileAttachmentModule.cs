@@ -9,6 +9,7 @@ using System.IO;
 
 namespace Libre_Update.Libre_Engine
 {
+    /*
 	/// <summary>
 	/// Stores all data to be stored in JSON file
 	/// </summary>
@@ -16,6 +17,7 @@ namespace Libre_Update.Libre_Engine
     {
       private List<FileObject> allObj = new List<FileObject>;
     }
+     * */
 
     /// <summary>
     /// A File Object
@@ -25,10 +27,10 @@ namespace Libre_Update.Libre_Engine
     public class FileObject
     {
 
-    	public static string fileObjName {get;}
-    	public static string fileObjExtension {get;}
-    	public static string fileObjDateCreated {get;}
-    	public static string fileObjSpecialCharacters {get;}
+    	public static string fileObjName {get; set;}
+    	public static string fileObjExtension {get ;set;}
+    	public static string fileObjDateCreated {get; set;}
+    	public static string fileObjSpecialCharacters {get; set;}
 
     	public static FileInfo fileInfoOfSelectedObj = new FileInfo(fileObjName);
 
@@ -37,10 +39,10 @@ namespace Libre_Update.Libre_Engine
     	/// </summary>
     	public FileObject(string _fileObjName, string _fileObjExtension, string _fileObjDateCreated, string _fileObjSpecialCharacters)
     	{
-    		this.fileObjName = _fileObjName;
-    		this.fileObjExtension = _fileObjExtension;
-    		this.fileObjDateCreated = _fileObjDateCreated;
-    		this.fileObjSpecialCharacters = _fileObjSpecialCharacters;
+    		fileObjName = _fileObjName;
+    		fileObjExtension = _fileObjExtension;
+    		fileObjDateCreated = _fileObjDateCreated;
+    		fileObjSpecialCharacters = _fileObjSpecialCharacters;
     	}
 
     	public void AddFileAsObj (string filePath)
