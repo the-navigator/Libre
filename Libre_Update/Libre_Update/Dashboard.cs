@@ -90,16 +90,16 @@ namespace Libre_Update
             {
                 // Libre_Engine.CheckDatabase l = new Libre_Engine.CheckDatabase();
                 //LearNAV_Engine.DatabaseConnection d = new LearNAV_Engine.DatabaseConnection();
-             
-                AdvanceSearch.searchName(var_st);
-            
 
-                if (AdvanceSearch.dt.Rows.Count > 0)
+                Libre_Engine.AdvanceSearch.searchName(var_st);
+
+
+                if (Libre_Engine.AdvanceSearch.dt.Rows.Count > 0)
                 {
-                    for (int i = 0; i < AdvanceSearch.dt.Rows.Count; i++)
+                    for (int i = 0; i < Libre_Engine.AdvanceSearch.dt.Rows.Count; i++)
                     {
 
-                        DataRow dr = AdvanceSearch.dt.Rows[i];
+                        DataRow dr = Libre_Engine.AdvanceSearch.dt.Rows[i];
                         ListViewItem fetched_data = new ListViewItem(dr["ID"].ToString());
                         fetched_data.SubItems.Add(dr["ResourceN"].ToString());
                         fetched_data.SubItems.Add(dr["GradeLevel"].ToString());
