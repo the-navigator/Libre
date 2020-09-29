@@ -13,6 +13,7 @@ namespace Libre_Update
 {
     public partial class Dashboard : Form
     {
+        bool enableTypeSearching = false;
         public Dashboard()
         {
             InitializeComponent();
@@ -83,10 +84,10 @@ namespace Libre_Update
         {
             resource_list.Items.Clear();
             Libre_Engine.VarHold.dataTableHolder.Clear();
-            search_name(search_box.Text);
+            searchName(search_box.Text);
         }
 
-        private void search_name(string var_st)
+        private void searchName(string var_st)
         {
         
             try
@@ -124,5 +125,26 @@ namespace Libre_Update
                 MessageBox.Show(a.Message);
             }
         }
+
+        private void search_box_DoubleClick(object sender, EventArgs e)
+        {
+            
+           
+
+        }
+
+        private void search_box_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == (Keys.Enter))
+            {
+                searchName(this.Text);
+            }
+        }
+
+       
+    }
+
+    class SortItemList
+    {
     }
 }

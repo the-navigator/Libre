@@ -156,8 +156,10 @@
             this.search_box.SelectedText = "";
             this.search_box.SelectionStart = 3;
             this.search_box.ShadowDecoration.Parent = this.search_box;
-            this.search_box.Size = new System.Drawing.Size(769, 29);
+            this.search_box.Size = new System.Drawing.Size(768, 29);
             this.search_box.TabIndex = 2;
+            this.search_box.DoubleClick += new System.EventHandler(this.search_box_DoubleClick);
+            this.search_box.KeyDown += new System.Windows.Forms.KeyEventHandler(this.search_box_KeyDown);
             // 
             // btn_search
             // 
