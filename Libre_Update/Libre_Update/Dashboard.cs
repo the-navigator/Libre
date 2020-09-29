@@ -137,7 +137,7 @@ namespace Libre_Update
         {
             if (e.KeyCode == (Keys.Enter))
             {
-                searchName(this.Text);
+                searchName(search_box.Text);
             }
         }
 
