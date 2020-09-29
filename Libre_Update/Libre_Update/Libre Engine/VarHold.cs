@@ -16,6 +16,20 @@ namespace Libre_Update.Libre_Engine
     	/// </summary>
     	public static string connectionString = "DataSource=" + Environment.CurrentDirectory + "\\LEARNAV.DB;Version=3";
 
+        /// <summary>
+        /// DatabaseConnection
+        /// </summary>
+        public SQLiteConnection databaseConnection = new SQLiteConnection(connectionString);
+
+        /// <summary>
+        /// DataTable to hold data
+        /// </summary>
+        public static DataTable dataTableHolder = new DataTable();
+
+      
+
+
+
     	/// <summary>
     	/// Column Names in the curretn database
     	/// </summary>

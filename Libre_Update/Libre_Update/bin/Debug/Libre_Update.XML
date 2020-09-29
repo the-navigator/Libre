@@ -42,12 +42,19 @@
             A universal string from this class that can be used as a message for exceptions
             </summary>
         </member>
-        <member name="F:Libre_Update.Libre_Engine.AdvanceSearch.dtFilteredName">
+        <member name="T:Libre_Update.Libre_Engine.QuickSearch">
             <summary>
-            Experimental DataTable for showing Filtered Name
+            Advanced Search Class
+            Responsible for Advance Filters and operations to be executed for specific results.
+            
             </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:Libre_Update.Libre_Engine.AdvanceSearch.searchName(System.String)" -->
+        <member name="M:Libre_Update.Libre_Engine.QuickSearch.SearchName(System.String)">
+            <summary>
+            Quickly Searches the database for name
+            </summary>
+            <param name="searchItem">What to Search?</param>
+        </member>
         <member name="T:Libre_Update.Libre_Engine.FileObject">
             <summary>
             A File Object
@@ -63,6 +70,16 @@
         <member name="F:Libre_Update.Libre_Engine.VarHold.connectionString">
             <summary>
             Connection String, Primary Connection String
+            </summary>
+        </member>
+        <member name="F:Libre_Update.Libre_Engine.VarHold.databaseConnection">
+            <summary>
+            DatabaseConnection
+            </summary>
+        </member>
+        <member name="F:Libre_Update.Libre_Engine.VarHold.dataTableHolder">
+            <summary>
+            DataTable to hold data
             </summary>
         </member>
         <member name="F:Libre_Update.Libre_Engine.VarHold.columnNames">

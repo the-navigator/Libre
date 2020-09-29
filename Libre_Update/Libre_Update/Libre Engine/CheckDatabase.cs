@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SQLite;
 using System.IO;
+using Newtonsoft.Json;
+
 
 namespace Libre_Update.Libre_Engine
 {
@@ -26,7 +28,7 @@ namespace Libre_Update.Libre_Engine
 
         public static SQLiteConnection dbCn = new SQLiteConnection(cnString);
 
-        public SQLiteConnection dbcn = new SQLiteConnection();
+        public   SQLiteConnection dbcn = new SQLiteConnection();
 
         public static SQLiteDataAdapter da = new SQLiteDataAdapter();
 
@@ -44,6 +46,7 @@ namespace Libre_Update.Libre_Engine
         //commands
 
         static string _initiaLoad = "SELECT * FROM ResourceDB";
+       
 
         //holder
         /// <summary>
@@ -64,7 +67,7 @@ namespace Libre_Update.Libre_Engine
         }
         public static void InitialLoad()
         {
-            string tableNameSearchName = Libre_Engine.VarHold.tableNames[0];
+            
             string selectQuery = (_initiaLoad);
             SQLiteCommand sqlInitialLoadCommand = new SQLiteCommand(selectQuery, dbCn);
             try
@@ -82,48 +85,42 @@ namespace Libre_Update.Libre_Engine
         }
 
 
-        /// <summary>
-        /// Advanced Search Class
-        /// Responsible for Advance Filters and operations to be executed for specific results.
-        /// 
-        /// </summary>
+        
     }
-    public static class AdvanceSearch
+    /// <summary>
+    /// Advanced Search Class
+    /// Responsible for Advance Filters and operations to be executed for specific results.
+    /// 
+    /// </summary>
+    public class QuickSearch
     {
-
-        static string connectionString = Libre_Update.Libre_Engine.VarHold.connectionString;
-        static SQLiteConnection db_cn = new SQLiteConnection(connectionString);
-        static SQLiteDataAdapter da = new SQLiteDataAdapter();
-        public static DataTable dt = new DataTable();
         /// <summary>
-        /// Experimental DataTable for showing Filtered Name
+        /// Quickly Searches the database for name
         /// </summary>
-        public static DataTable dtFilteredName = new DataTable();
-        public static string _searchQuery
+        /// <param name="searchItem">What to Search?</param>
+        public void SearchName(string searchItem)
         {
-            get;
-            set;
+            SQLiteConnection dc = new SQLiteConnection(VarHold.connectionString);
+            dc.Open();
+            using (dc)
+            {
+                string tableNameSearchName = Libre_Engine.VarHold.tableNames[0];
+                SQLiteCommand _sqlCmn = new SQLiteCommand("SELECT * FROM " + tableNameSearchName + " WHERE ResourceN Like '%" + searchItem + "%'" , dc);
+                SQLiteDataAdapter _sqlDa = new SQLiteDataAdapter(_sqlCmn);
+                //VarHold.dataTableHolder.Clear();
+                _sqlDa.Fill(VarHold.dataTableHolder);
+                dc.Close();
+            }
+
+
         }
-        /// <summary>
-        /// Search the Database for specific Name
-        /// <param name="_search_name" String Varialbe to place search string
-        /// </summary>
-        public static void searchName(string _searchName)
+
+        public void SearchWithGradeLevel(string gradeLevel, string categoryOfSearch, string searchItem)
         {
-            string tableNameSearchName = Libre_Engine.VarHold.tableNames[0];
-
-            string selectQuery = ("SELECT * FROM " + tableNameSearchName);
-            SQLiteCommand sqlInitialLoadCommand = new SQLiteCommand(selectQuery, db_cn);
-            db_cn.Open();
-            da = new SQLiteDataAdapter("SELECT * FROM ResourceDB WHERE ResourceN like '%" + _searchName + "%'", db_cn);
-            dt.Clear();
-            da.Fill(dt);
-            DataView dv = new DataView(dt);
-
-
         }
 
     }
+
 }
        
     

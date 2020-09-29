@@ -81,38 +81,42 @@ namespace Libre_Update
 
         private void btn_search_Click(object sender, EventArgs e)
         {
+            resource_list.Items.Clear();
+            Libre_Engine.VarHold.dataTableHolder.Clear();
             search_name(search_box.Text);
         }
 
-        void search_name(string var_st)
+        private void search_name(string var_st)
         {
+        
             try
             {
                 // Libre_Engine.CheckDatabase l = new Libre_Engine.CheckDatabase();
                 //LearNAV_Engine.DatabaseConnection d = new LearNAV_Engine.DatabaseConnection();
-
-                Libre_Engine.AdvanceSearch.searchName(var_st);
-
-
-                if (Libre_Engine.AdvanceSearch.dt.Rows.Count > 0)
+                Libre_Engine.QuickSearch searchResourceName = new Libre_Engine.QuickSearch();
+                searchResourceName.SearchName(var_st);
+                
+             
+                using (Libre_Engine.VarHold.dataTableHolder)
                 {
-                    for (int i = 0; i < Libre_Engine.AdvanceSearch.dt.Rows.Count; i++)
+                    if (Libre_Engine.VarHold.dataTableHolder.Rows.Count > 0)
                     {
+                        for (int i = 0; i < Libre_Engine.VarHold.dataTableHolder.Rows.Count; i++)
+                        {
+                            DataRow dr = Libre_Engine.VarHold.dataTableHolder.Rows[i];
+                            ListViewItem fetched_data = new ListViewItem(dr["ID"].ToString());
+                            fetched_data.SubItems.Add(dr["ResourceN"].ToString());
+                            fetched_data.SubItems.Add(dr["GradeLevel"].ToString());
 
-                        DataRow dr = Libre_Engine.AdvanceSearch.dt.Rows[i];
-                        ListViewItem fetched_data = new ListViewItem(dr["ID"].ToString());
-                        fetched_data.SubItems.Add(dr["ResourceN"].ToString());
-                        fetched_data.SubItems.Add(dr["GradeLevel"].ToString());
-
-                        resource_list.Clear();
-                        resource_list.Items.Add(fetched_data);
-
+                            resource_list.Items.Add(fetched_data);
+                  
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error");
                     }
                 }
-                else
-
-                    MessageBox.Show("Error");
-
 
             }
             catch (Exception a)

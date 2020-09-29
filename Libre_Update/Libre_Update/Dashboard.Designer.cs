@@ -447,7 +447,7 @@
             this.btn_access.Location = new System.Drawing.Point(768, 487);
             this.btn_access.Name = "btn_access";
             this.btn_access.ShadowDecoration.Parent = this.btn_access;
-            this.btn_access.Size = new System.Drawing.Size(152, 37);
+            this.btn_access.Size = new System.Drawing.Size(152, 43);
             this.btn_access.TabIndex = 14;
             this.btn_access.Text = "Access";
             // 
