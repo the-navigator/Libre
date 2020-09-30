@@ -119,6 +119,20 @@ namespace Libre_Update.Libre_Engine
         {
         }
 
+
+
+    }
+
+    public static class OpenResource
+    {
+        static string pathToExtract = Environment.CurrentDirectory + @"\ExtractFiles\";
+
+        if (!Directory.Exists(pathToExtract))
+        {
+            DirectoryInfo directInfo = Directory.CreateDirectory(pathToExtract);
+        }
+
+        
     }
 
 }

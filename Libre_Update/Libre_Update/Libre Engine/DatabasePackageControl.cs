@@ -33,6 +33,14 @@ namespace Libre_Update.Libre_Engine
 
       }
 
+      public static void SelectNewDatabase()
+      {
+        string selectFolderToRead;
+        
+        dbName = selectFolderToRead';
+        
+      }
+
      
     }
 
