@@ -11,11 +11,11 @@ namespace Libre_Update.Libre_Engine
 {
     public class VarHold
     {
-        public static string DatabaseName {set; get;}
+        public static string DatabaseName;
     	/// <summary>
     	/// Connection String, Primary Connection String
     	/// </summary>
-    	public static string connectionString = "DataSource=" + Environment.CurrentDirectory + "\\LEARNAV.DB;Version=3";
+    	public static string connectionString = "DataSource=" + Environment.CurrentDirectory + "\\DatabasePack\\" + DatabaseName +";Version=3";
 
         /// <summary>
         /// DatabaseConnection
@@ -40,6 +40,11 @@ namespace Libre_Update.Libre_Engine
     	/// Table Names
     	/// </summary>
     	public static string[] tableNames = {"ResourceDB", "SandboxDB"};
+
+        public static void AssignName()
+        {
+            connectionString = "DataSource=" + Environment.CurrentDirectory + "\\DatabasePack\\" + DatabaseName + ";Version=3";
+        }
 
     }
 }

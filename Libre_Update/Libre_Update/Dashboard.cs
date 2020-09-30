@@ -117,6 +117,7 @@ namespace Libre_Update
                     {
                         MessageBox.Show("Resource not Found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         resource_list.Items.Clear();
+
                         LoadData();
                     }
                 }

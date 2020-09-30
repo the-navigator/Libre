@@ -55,6 +55,21 @@
             </summary>
             <param name="searchItem">What to Search?</param>
         </member>
+        <member name="T:Libre_Update.Libre_Engine.DatabasePackageControl">
+            <summary>
+            Enables Flexible Usage of Database
+            </summary>
+        </member>
+        <member name="F:Libre_Update.Libre_Engine.DatabasePackageControl.dbName">
+            <summary>
+            Data Transferred to VarHold.databaseName for conection string
+            </summary>
+        </member>
+        <member name="M:Libre_Update.Libre_Engine.DatabasePackageControl.GetName">
+            <summary>
+            The Initial Code to run for checking and assigning databaseName for Connection String property
+            </summary>
+        </member>
         <member name="T:Libre_Update.Libre_Engine.FileObject">
             <summary>
             A File Object

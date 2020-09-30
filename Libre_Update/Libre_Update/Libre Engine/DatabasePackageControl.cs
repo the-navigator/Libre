@@ -11,29 +11,30 @@ using Newtonsoft.Json;
 
 namespace Libre_Update.Libre_Engine
 {
-
-    public class DatabasePackageControl
+    /// <summary>
+    /// Enables Flexible Usage of Database
+    /// </summary>
+    public partial class DatabasePackageControl
     {
-    	public static string databaseName {get; set;}
+        /// <summary>
+        /// Data Transferred to VarHold.databaseName for conection string
+        /// </summary>
+        public static string dbName;
 
-    	public static void CheckDatabaseName()
-    	{
-    		string pathToCheck = Environment.CurrentDirectory + "\\DatabasePack";
-    		var dbNameFromJSON = JsonConvert.DeserializeObject<DatabaseNameObj>(File.ReadAllText(pathToCheck));
-    		var NameHolder n = New NameHolder();
-    		Libre_Engine.VarHold.
-    	}
+      /// <summary>
+      /// The Initial Code to run for checking and assigning databaseName for Connection String property
+      /// </summary>
+      public static void GetName()
+      {
+        string fileToRead =  System.IO.File.ReadAllText(Environment.CurrentDirectory + "\\DatabasePack\\databaseName.dbname");
+     
+        dbName = fileToRead;
+        VarHold.DatabaseName = dbName;
+
+      }
+
+     
     }
 
-    public class DatabaseName 
-    {
-    	public string objName {set; get;}
-    	public string dbName {set; get;}
-    }
-
-    public class DatabaseNameObj
-    {
-    	public Dictionary<string, DatabaseName> NameHolder {set; get;}
-    }
-    }
+   
 }

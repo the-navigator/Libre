@@ -68,6 +68,7 @@
     </Compile>
     <Compile Include="Engine\Operations.cs" />
     <Compile Include="Libre Engine\CheckDatabase.cs" />
+    <Compile Include="Libre Engine\DatabasePackageControl.cs" />
     <Compile Include="Libre Engine\FileAttachmentModule.cs" />
     <Compile Include="Libre Engine\VarHold.cs" />
     <Compile Include="msgbox.cs">
