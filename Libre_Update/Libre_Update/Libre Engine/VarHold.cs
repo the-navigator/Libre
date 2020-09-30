@@ -11,6 +11,7 @@ namespace Libre_Update.Libre_Engine
 {
     public class VarHold
     {
+        public static string DatabaseName {set; get;}
     	/// <summary>
     	/// Connection String, Primary Connection String
     	/// </summary>

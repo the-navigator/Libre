@@ -115,7 +115,9 @@ namespace Libre_Update
                     }
                     else
                     {
-                        MessageBox.Show("Error");
+                        MessageBox.Show("Resource not Found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        resource_list.Items.Clear();
+                        LoadData();
                     }
                 }
 
@@ -135,8 +137,10 @@ namespace Libre_Update
 
         private void search_box_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == (Keys.Enter))
+             if (e.KeyCode == (Keys.Enter))
             {
+                resource_list.Items.Clear();
+                Libre_Engine.VarHold.dataTableHolder.Clear();
                 searchName(search_box.Text);
             }
         }
