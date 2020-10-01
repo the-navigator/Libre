@@ -23,7 +23,7 @@ namespace Libre_Update
         {
             shadow_form.SetShadowForm(this);
             LoadData();
-
+           // SplashScreen.ActiveForm.Close();
         }
 
         private void LoadData()
@@ -66,7 +66,7 @@ namespace Libre_Update
         {
             try
             {
-                System.Diagnostics.Process.Start(Environment.CurrentDirectory + "\\Resource Files");
+                System.Diagnostics.Process.Start(Environment.CurrentDirectory);
 
             }
             catch(Exception v)
@@ -89,6 +89,7 @@ namespace Libre_Update
 
         private void searchName(string var_st)
         {
+            resource_list.Items.Clear();
         
             try
             {
@@ -115,8 +116,9 @@ namespace Libre_Update
                     }
                     else
                     {
+                        
                         MessageBox.Show("Resource not Found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        resource_list.Items.Clear();
+                       
 
                         LoadData();
                     }
@@ -144,6 +146,11 @@ namespace Libre_Update
                 Libre_Engine.VarHold.dataTableHolder.Clear();
                 searchName(search_box.Text);
             }
+        }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
        

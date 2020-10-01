@@ -122,18 +122,65 @@ namespace Libre_Update.Libre_Engine
 
 
     }
-
-    public static class OpenResource
+    //public static class SQLiteBlob : System.IO.Stream
+    
+    public class OpenResource
     {
-        static string pathToExtract = Environment.CurrentDirectory + @"\ExtractFiles\";
-
-        if (!Directory.Exists(pathToExtract))
-        {
-            DirectoryInfo directInfo = Directory.CreateDirectory(pathToExtract);
-        }
-
         
+        static string pathToExtract = Environment.CurrentDirectory + @"\ExtractFiles\";
+       
+        static string _file;
+        static string ID;
+
+        SQLiteConnection databaseConnection = new SQLiteConnection(VarHold.connectionString);
+         static SQLiteCommand databaseCommand = new SQLiteCommand("SELECT * FROM BLOBTable WHERE ID=" + ID);
+
+        SQLiteDataReader databaseReader = databaseCommand.ExecuteReader(System.Data.CommandBehavior.Default);
+       
+        public OpenResource(string _id)
+        {   
+            ID = _id;
+        }
+        
+        public void OpenFile()
+        {
+             databaseConnection.Open();
+       
+            try 
+            {
+     
+                while (databaseReader.Read())
+                {
+                    SQLiteBlob outputBlob = databaseReader.GetBlob(databaseReader.GetOrdinal("File"), readOnly:true);
+                    SQLiteDataReader sqlDataRead = databaseCommand.ExecuteReader();
+
+                    Int32 fileSize = databaseReader.GetInt32(databaseReader.GetOrdinal("File"));
+                    byte[] fileData = new byte[fileSize];
+                    databaseReader.GetBytes(databaseReader.GetInt32(databaseReader.GetOrdinal("File")), 0, fileData, 0, (int)fileSize);
+
+                    string fileName = databaseReader.GetString(databaseReader.GetOrdinal("ResourceName"));
+                    string fileExt = databaseReader.GetString(databaseReader.GetOrdinal("ResourceExt"));
+                    string fullPath = pathToExtract + "\\" + fileName + fileExt;
+                    FileStream fs = new FileStream(fullPath, FileMode.OpenOrCreate);
+                    fs.Write(fileData, 0, (int)fileSize);
+                    System.Diagnostics.Process.Start(fullPath);
+                    
+
+                    //BinaryWriter br = new BinaryWriter(fs);
+                    //br.Write(
+                }
+            } finally{
+
+            }
+            
+        }
     }
+    
+
+
+
+    }
+     
 
 }
        

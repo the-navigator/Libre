@@ -37,7 +37,7 @@ namespace Libre_Update.Libre_Engine
       {
         string selectFolderToRead;
         
-        dbName = selectFolderToRead';
+        //dbName = selectFolderToRead;
         
       }
 

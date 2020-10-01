@@ -63,6 +63,16 @@ namespace Libre_Update.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Astronaut {
+            get {
+                object obj = ResourceManager.GetObject("Astronaut", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap book_shelf_96px {
             get {
                 object obj = ResourceManager.GetObject("book_shelf_96px", resourceCulture);
@@ -176,6 +186,16 @@ namespace Libre_Update.Properties {
         internal static System.Drawing.Bitmap grid_2_24px1 {
             get {
                 object obj = ResourceManager.GetObject("grid_2_24px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lolzz_card {
+            get {
+                object obj = ResourceManager.GetObject("lolzz card", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
