@@ -39,7 +39,9 @@ namespace Libre_Update.Libre_Engine
     	/// <summary>
     	/// Table Names
     	/// </summary>
-    	public static string[] tableNames = {"ResourceDB", "SandboxDB"};
+    	public static string[] tableNames = {"ResourceDB", "SandboxDB", "BLOBTable"};
+
+ 
 
         public static void AssignName()
         {

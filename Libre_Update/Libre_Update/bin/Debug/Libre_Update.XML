@@ -89,6 +89,11 @@
             </summary>
             <param name="searchItem">What to Search?</param>
         </member>
+        <member name="T:Libre_Update.Libre_Engine.OpenResource">
+            <summary>
+            A Class used to Open the Resource
+            </summary>
+        </member>
         <member name="T:Libre_Update.Libre_Engine.DatabasePackageControl">
             <summary>
             Enables Flexible Usage of Database
@@ -196,6 +201,36 @@
               resource lookups using this strongly typed resource class.
             </summary>
         </member>
+        <member name="P:Libre_Update.Properties.Resources._071">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Libre_Update.Properties.Resources._074">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Libre_Update.Properties.Resources._132">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Libre_Update.Properties.Resources._142">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Libre_Update.Properties.Resources._145">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Libre_Update.Properties.Resources._146">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:Libre_Update.Properties.Resources.Astronaut">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
@@ -232,6 +267,21 @@
             </summary>
         </member>
         <member name="P:Libre_Update.Properties.Resources.download_from_ftp_96px1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Libre_Update.Properties.Resources.final">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Libre_Update.Properties.Resources.fn">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Libre_Update.Properties.Resources.fn1">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
@@ -281,6 +331,11 @@
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:Libre_Update.Properties.Resources.Presentation1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:Libre_Update.Properties.Resources.search_96px">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
@@ -307,6 +362,21 @@
             </summary>
         </member>
         <member name="P:Libre_Update.Properties.Resources.search_folder_96px1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Libre_Update.Properties.Resources.test">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Libre_Update.Properties.Resources.test1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Libre_Update.Properties.Resources.white_theme">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>

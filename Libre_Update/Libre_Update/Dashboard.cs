@@ -131,9 +131,20 @@ namespace Libre_Update
             }
         }
 
+        private void OpenResource()
+        {
+            ListViewItem selectOpen = new ListViewItem();
+            selectOpen = resource_list.SelectedItems[0];
+            string selectedID = selectOpen.SubItems[1].Text;
+
+            Libre_Engine.OpenResource op = new Libre_Engine.OpenResource(selectedID);
+            op.OpenFile();
+        }
+
         private void search_box_DoubleClick(object sender, EventArgs e)
         {
             
+
            
 
         }
@@ -151,6 +162,11 @@ namespace Libre_Update
         private void guna2CircleButton1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btn_access_Click(object sender, EventArgs e)
+        {
+            OpenResource();
         }
 
        

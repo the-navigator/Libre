@@ -124,6 +124,9 @@ namespace Libre_Update.Libre_Engine
     }
     //public static class SQLiteBlob : System.IO.Stream
     
+    /// <summary>
+    /// A Class used to Open the Resource
+    /// </summary>
     public class OpenResource
     {
         
@@ -133,9 +136,7 @@ namespace Libre_Update.Libre_Engine
         static string ID;
 
         SQLiteConnection databaseConnection = new SQLiteConnection(VarHold.connectionString);
-         static SQLiteCommand databaseCommand = new SQLiteCommand("SELECT * FROM BLOBTable WHERE ID=" + ID);
-
-        SQLiteDataReader databaseReader = databaseCommand.ExecuteReader(System.Data.CommandBehavior.Default);
+  
        
         public OpenResource(string _id)
         {   
@@ -145,16 +146,19 @@ namespace Libre_Update.Libre_Engine
         public void OpenFile()
         {
              databaseConnection.Open();
+             SQLiteCommand databaseCommand = new SQLiteCommand("SELECT * FROM BLOBTable WHERE ID=" + ID, databaseConnection);
+             SQLiteDataReader databaseReader = databaseCommand.ExecuteReader(System.Data.CommandBehavior.Default);
        
             try 
             {
      
                 while (databaseReader.Read())
                 {
+                  
                     SQLiteBlob outputBlob = databaseReader.GetBlob(databaseReader.GetOrdinal("File"), readOnly:true);
                     SQLiteDataReader sqlDataRead = databaseCommand.ExecuteReader();
 
-                    Int32 fileSize = databaseReader.GetInt32(databaseReader.GetOrdinal("File"));
+                    long fileSize = databaseReader.GetInt32(databaseReader.GetOrdinal("File"));
                     byte[] fileData = new byte[fileSize];
                     databaseReader.GetBytes(databaseReader.GetInt32(databaseReader.GetOrdinal("File")), 0, fileData, 0, (int)fileSize);
 
@@ -179,10 +183,10 @@ namespace Libre_Update.Libre_Engine
 
 
 
-    }
+}
      
 
-}
+
        
     
 

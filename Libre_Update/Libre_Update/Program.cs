@@ -18,9 +18,9 @@ namespace Libre_Update
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Libre_Engine.DatabasePackageControl.GetName();
-            Libre_Engine.VarHold.AssignName();
-            Application.Run(new Dashboard());
+            //Libre_Engine.DatabasePackageControl.GetName();
+           // Libre_Engine.VarHold.AssignName();
+            Application.Run(new Home());
           
         }
     }

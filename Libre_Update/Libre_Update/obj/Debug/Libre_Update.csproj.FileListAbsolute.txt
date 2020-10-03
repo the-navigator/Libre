@@ -20,19 +20,19 @@ C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre_Update\Libre_Update\obj\
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\bin\Debug\Libre_Update.exe
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\bin\Debug\System.Data.SQLite.dll
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\bin\Debug\Libre_Update.exe.config
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\bin\Debug\Libre_Update.XML
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\bin\Debug\Libre_Update.pdb
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\bin\Debug\LearNAV Engine.dll
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\bin\Debug\Newtonsoft.Json.dll
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\bin\Debug\LearNAV Engine.pdb
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\bin\Debug\Newtonsoft.Json.xml
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\bin\Debug\System.Data.SQLite.xml
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.AdvanceSearch.resources
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.Dashboard.resources
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.Home.resources
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.msgbox.resources
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.Properties.Resources.resources
+C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.SplashScreen.resources
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.csproj.GenerateResource.Cache
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.exe
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.pdb
-C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\bin\Debug\Libre_Update.XML
-C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.msgbox.resources
-C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.SplashScreen.resources
-C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.AdvanceSearch.resources
-C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.Home.resources

@@ -268,6 +268,7 @@
             this.btn_access.Size = new System.Drawing.Size(152, 43);
             this.btn_access.TabIndex = 14;
             this.btn_access.Text = "Access";
+            this.btn_access.Click += new System.EventHandler(this.btn_access_Click);
             // 
             // btn_issue
             // 

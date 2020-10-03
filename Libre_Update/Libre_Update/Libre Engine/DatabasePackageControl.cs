@@ -20,6 +20,7 @@ namespace Libre_Update.Libre_Engine
         /// Data Transferred to VarHold.databaseName for conection string
         /// </summary>
         public static string dbName;
+        public static string dbLoc;
 
       /// <summary>
       /// The Initial Code to run for checking and assigning databaseName for Connection String property
@@ -32,6 +33,14 @@ namespace Libre_Update.Libre_Engine
         VarHold.DatabaseName = dbName;
 
       }
+
+      public static void SetName(string path)
+      {
+          dbName = path;
+          VarHold.DatabaseName = dbName;
+      }
+
+
 
       public static void SelectNewDatabase()
       {
