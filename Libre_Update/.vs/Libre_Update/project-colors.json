@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c4938e7c-0401-4cf3-af53-c35ffa2dd3ca": {
+      "ProjectGuid": "c4938e7c-0401-4cf3-af53-c35ffa2dd3ca",
+      "DisplayName": "Libre_Update",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}

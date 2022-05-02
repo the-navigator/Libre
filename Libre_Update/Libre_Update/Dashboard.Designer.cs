@@ -179,6 +179,7 @@
             this.r_subj});
             this.resource_list.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resource_list.FullRowSelect = true;
+            this.resource_list.HideSelection = false;
             this.resource_list.Location = new System.Drawing.Point(12, 127);
             this.resource_list.MultiSelect = false;
             this.resource_list.Name = "resource_list";

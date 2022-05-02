@@ -20,7 +20,7 @@ namespace Libre_Update
             Application.SetCompatibleTextRenderingDefault(false);
             //Libre_Engine.DatabasePackageControl.GetName();
            // Libre_Engine.VarHold.AssignName();
-            Application.Run(new Home());
+            Application.Run(new Dashboard());
           
         }
     }

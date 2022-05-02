@@ -21,3 +21,27 @@ C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\bin\Debug\LearNA
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\bin\Debug\System.Data.SQLite.xml
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\obj\Debug\Libre.exe
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\LearNAV\obj\Debug\Libre.pdb
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\LearNAV\bin\Debug\Libre.exe.config
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\LearNAV\bin\Debug\Libre.exe
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\LearNAV\bin\Debug\Libre.pdb
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\LearNAV\bin\Debug\DotNetZip.dll
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\LearNAV\bin\Debug\System.Data.SQLite.dll
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\LearNAV\bin\Debug\DotNetZip.pdb
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\LearNAV\bin\Debug\DotNetZip.xml
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\LearNAV\bin\Debug\LearNAV Engine.pdb
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\LearNAV\bin\Debug\System.Data.SQLite.xml
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\LearNAV\bin\Debug\System.Data.SQLite.dll.config
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\LearNAV\obj\Debug\Libre.csproj.AssemblyReference.cache
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\LearNAV\obj\Debug\Libre.csproj.SuggestedBindingRedirects.cache
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\LearNAV\obj\Debug\Libre.Advance_Search.resources
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\LearNAV\obj\Debug\Libre.cmn_line.resources
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\LearNAV\obj\Debug\Libre.Dashboard.resources
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\LearNAV\obj\Debug\Libre.Loding_Screen.resources
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\LearNAV\obj\Debug\Libre.Properties.Resources.resources
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\LearNAV\obj\Debug\Libre.Resource_Card.resources
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\LearNAV\obj\Debug\Libre.Shelf.resources
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\LearNAV\obj\Debug\Libre.csproj.GenerateResource.cache
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\LearNAV\obj\Debug\Libre.csproj.CoreCompileInputs.cache
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\LearNAV\obj\Debug\Libre.csproj.CopyComplete
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\LearNAV\obj\Debug\Libre.exe
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\LearNAV\obj\Debug\Libre.pdb

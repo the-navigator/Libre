@@ -37,7 +37,6 @@
             this.main_pnl = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.theme_mode = new Guna.UI2.WinForms.Guna2ToggleSwitch();
-            this.pnl_results = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_change_view = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_details = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_accs = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -63,6 +62,7 @@
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.btn_close = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.pnl_results = new System.Windows.Forms.FlowLayoutPanel();
             this.main_pnl.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -162,21 +162,7 @@
             this.theme_mode.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.theme_mode.UncheckedState.InnerColor = System.Drawing.Color.White;
             this.theme_mode.UncheckedState.Parent = this.theme_mode;
-            this.theme_mode.Visible = false;
             this.theme_mode.CheckedChanged += new System.EventHandler(this.theme_mode_CheckedChanged);
-            // 
-            // pnl_results
-            // 
-            this.pnl_results.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnl_results.AutoScroll = true;
-            this.pnl_results.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.pnl_results.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnl_results.Location = new System.Drawing.Point(20, 90);
-            this.pnl_results.Name = "pnl_results";
-            this.pnl_results.Size = new System.Drawing.Size(791, 388);
-            this.pnl_results.TabIndex = 26;
             // 
             // btn_change_view
             // 
@@ -188,7 +174,7 @@
             this.btn_change_view.CustomImages.Parent = this.btn_change_view;
             this.btn_change_view.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
             this.btn_change_view.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
-            this.btn_change_view.Font = new System.Drawing.Font("Fira Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_change_view.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_change_view.ForeColor = System.Drawing.Color.White;
             this.btn_change_view.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(75)))), ((int)(((byte)(73)))));
             this.btn_change_view.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(55)))), ((int)(((byte)(144)))));
@@ -211,7 +197,7 @@
             this.btn_details.CustomImages.Parent = this.btn_details;
             this.btn_details.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
             this.btn_details.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
-            this.btn_details.Font = new System.Drawing.Font("Fira Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_details.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_details.ForeColor = System.Drawing.Color.White;
             this.btn_details.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(96)))), ((int)(((byte)(177)))));
             this.btn_details.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(83)))), ((int)(((byte)(165)))));
@@ -233,7 +219,7 @@
             this.btn_accs.Enabled = false;
             this.btn_accs.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(179)))), ((int)(((byte)(127)))));
             this.btn_accs.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(179)))), ((int)(((byte)(154)))));
-            this.btn_accs.Font = new System.Drawing.Font("Fira Sans Heavy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_accs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_accs.ForeColor = System.Drawing.Color.White;
             this.btn_accs.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(179)))), ((int)(((byte)(127)))));
             this.btn_accs.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(179)))), ((int)(((byte)(154)))));
@@ -257,7 +243,7 @@
             this.btn_quick.CheckedState.Parent = this.btn_quick;
             this.btn_quick.CustomImages.Parent = this.btn_quick;
             this.btn_quick.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
-            this.btn_quick.Font = new System.Drawing.Font("Fira Sans SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_quick.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_quick.ForeColor = System.Drawing.Color.White;
             this.btn_quick.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
             this.btn_quick.HoverState.Parent = this.btn_quick;
@@ -278,7 +264,7 @@
             this.btn_advanced.CheckedState.Parent = this.btn_advanced;
             this.btn_advanced.CustomImages.Parent = this.btn_advanced;
             this.btn_advanced.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
-            this.btn_advanced.Font = new System.Drawing.Font("Fira Sans SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_advanced.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_advanced.ForeColor = System.Drawing.Color.White;
             this.btn_advanced.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(92)))), ((int)(((byte)(121)))));
             this.btn_advanced.HoverState.Parent = this.btn_advanced;
@@ -294,11 +280,11 @@
             // 
             this.lbl_qck_srch.AutoSize = true;
             this.lbl_qck_srch.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_qck_srch.Font = new System.Drawing.Font("Fira Sans", 22F, System.Drawing.FontStyle.Bold);
+            this.lbl_qck_srch.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold);
             this.lbl_qck_srch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(205)))), ((int)(((byte)(185)))));
             this.lbl_qck_srch.Location = new System.Drawing.Point(14, 15);
             this.lbl_qck_srch.Name = "lbl_qck_srch";
-            this.lbl_qck_srch.Size = new System.Drawing.Size(191, 36);
+            this.lbl_qck_srch.Size = new System.Drawing.Size(205, 36);
             this.lbl_qck_srch.TabIndex = 0;
             this.lbl_qck_srch.Text = "Quick Search";
             // 
@@ -339,9 +325,10 @@
             this.ID,
             this.columnHeader2,
             this.columnHeader3});
-            this.search_results.Font = new System.Drawing.Font("Fira Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_results.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search_results.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(76)))), ((int)(((byte)(83)))));
             this.search_results.FullRowSelect = true;
+            this.search_results.HideSelection = false;
             this.search_results.Location = new System.Drawing.Point(20, 90);
             this.search_results.Name = "search_results";
             this.search_results.Size = new System.Drawing.Size(791, 388);
@@ -390,44 +377,44 @@
             // lbl_libre
             // 
             this.lbl_libre.AutoSize = true;
-            this.lbl_libre.Font = new System.Drawing.Font("Berlin Rounded Bold", 12F, System.Drawing.FontStyle.Bold);
+            this.lbl_libre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.lbl_libre.ForeColor = System.Drawing.Color.White;
             this.lbl_libre.Location = new System.Drawing.Point(336, 4);
             this.lbl_libre.Name = "lbl_libre";
-            this.lbl_libre.Size = new System.Drawing.Size(73, 19);
+            this.lbl_libre.Size = new System.Drawing.Size(74, 20);
             this.lbl_libre.TabIndex = 26;
             this.lbl_libre.Text = "L i b r e.";
             // 
             // lbl_c
             // 
             this.lbl_c.AutoSize = true;
-            this.lbl_c.Font = new System.Drawing.Font("Gelion Regular", 8F, System.Drawing.FontStyle.Italic);
+            this.lbl_c.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic);
             this.lbl_c.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(92)))), ((int)(((byte)(121)))));
             this.lbl_c.Location = new System.Drawing.Point(29, 9);
             this.lbl_c.Name = "lbl_c";
-            this.lbl_c.Size = new System.Drawing.Size(126, 13);
+            this.lbl_c.Size = new System.Drawing.Size(122, 13);
             this.lbl_c.TabIndex = 27;
             this.lbl_c.Text = "(C) 2019-2020 | team jar.";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Gelion Black", 12F, System.Drawing.FontStyle.Bold);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(92)))), ((int)(((byte)(121)))));
             this.label4.Location = new System.Drawing.Point(415, 4);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 19);
+            this.label4.Size = new System.Drawing.Size(113, 20);
             this.label4.TabIndex = 28;
             this.label4.Text = "Beta Version";
             // 
             // lbl_version
             // 
             this.lbl_version.AutoSize = true;
-            this.lbl_version.Font = new System.Drawing.Font("Gelion Regular", 12F, System.Drawing.FontStyle.Italic);
+            this.lbl_version.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic);
             this.lbl_version.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(92)))), ((int)(((byte)(121)))));
             this.lbl_version.Location = new System.Drawing.Point(685, 4);
             this.lbl_version.Name = "lbl_version";
-            this.lbl_version.Size = new System.Drawing.Size(113, 19);
+            this.lbl_version.Size = new System.Drawing.Size(123, 20);
             this.lbl_version.TabIndex = 29;
             this.lbl_version.Text = "version 2. 0. 0. 1";
             // 
@@ -471,6 +458,20 @@
             this.btn_close.TabIndex = 30;
             this.btn_close.Text = "guna2CircleButton1";
             this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
+            // 
+            // pnl_results
+            // 
+            this.pnl_results.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnl_results.AutoScroll = true;
+            this.pnl_results.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(28)))), ((int)(((byte)(37)))));
+            this.pnl_results.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnl_results.Location = new System.Drawing.Point(20, 90);
+            this.pnl_results.Name = "pnl_results";
+            this.pnl_results.Size = new System.Drawing.Size(791, 388);
+            this.pnl_results.TabIndex = 26;
+            this.pnl_results.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_results_Paint);
             // 
             // Dashboard
             // 
@@ -526,12 +527,12 @@
         private System.Windows.Forms.Label lbl_version;
         private Guna.UI2.WinForms.Guna2ToggleSwitch theme_mode;
         private System.Windows.Forms.ToolTip theme_management;
-        private System.Windows.Forms.FlowLayoutPanel pnl_results;
         private Guna.UI2.WinForms.Guna2GradientButton btn_change_view;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse6;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2CircleButton btn_close;
+        private System.Windows.Forms.FlowLayoutPanel pnl_results;
     }
 }

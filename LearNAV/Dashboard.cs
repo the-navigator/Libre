@@ -318,10 +318,9 @@ namespace Libre
 
         }
 
-       
+        private void pnl_results_Paint(object sender, PaintEventArgs e)
+        {
 
-      
-
-       
+        }
     }
 }

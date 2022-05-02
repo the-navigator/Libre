@@ -36,3 +36,24 @@ C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Updat
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.csproj.GenerateResource.Cache
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.exe
 C:\Users\hp\Documents\Visual Studio 2012\Projects\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.pdb
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.csproj.AssemblyReference.cache
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.csproj.SuggestedBindingRedirects.cache
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.AdvanceSearch.resources
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.Dashboard.resources
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.msgbox.resources
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.Properties.Resources.resources
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.SplashScreen.resources
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.csproj.GenerateResource.cache
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.csproj.CoreCompileInputs.cache
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.exe
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.pdb
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\Libre_Update\Libre_Update\bin\Debug\Libre_Update.exe.config
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\Libre_Update\Libre_Update\bin\Debug\Libre_Update.XML
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\Libre_Update\Libre_Update\bin\Debug\Libre_Update.exe
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\Libre_Update\Libre_Update\bin\Debug\Libre_Update.pdb
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\Libre_Update\Libre_Update\bin\Debug\System.Data.SQLite.dll
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\Libre_Update\Libre_Update\bin\Debug\LearNAV Engine.pdb
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\Libre_Update\Libre_Update\bin\Debug\Newtonsoft.Json.xml
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\Libre_Update\Libre_Update\bin\Debug\System.Data.SQLite.xml
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\Libre_Update\Libre_Update\bin\Debug\System.Data.SQLite.dll.config
+D:\LIBRE\LIBRE\LIBRE-DEV\Libre\Libre_Update\Libre_Update\obj\Debug\Libre_Update.csproj.CopyComplete
